@@ -7,7 +7,7 @@ public class EagleAi : MonoBehaviour
     public GameObject PointA;
     public GameObject PointB;
     public float Speed;
-    public float knockbackForce = 10f; // Knockback force to apply to the player
+    public float knockbackForce = 10f; 
 
     private Rigidbody2D rb;
     private Transform CurrentPoint;
