@@ -355,6 +355,7 @@ MonoBehaviour:
   PointA: {fileID: 2117971139}
   PointB: {fileID: 306418459}
   Speed: 3
+  knockbackForce: 10
 --- !u!60 &121985428
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -807,6 +808,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c90ac9904491cea4c948a0c2ed70d36e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterDB: {fileID: 0}
+  artworkSprite: {fileID: 0}
+  selectedOption: 0
   speed: 5
   jumpForce: 500
 --- !u!50 &497002562
@@ -964,7 +968,7 @@ GameObject:
   - component: {fileID: 503561297}
   - component: {fileID: 503561298}
   m_Layer: 6
-  m_Name: PLAYER
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1121,6 +1125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c90ac9904491cea4c948a0c2ed70d36e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterDB: {fileID: 11400000, guid: a627682a321647c4b8f094ab0f98b2e3, type: 2}
+  artworkSprite: {fileID: 503561292}
+  selectedOption: 0
   speed: 5
   jumpForce: 500
 --- !u!95 &503561297

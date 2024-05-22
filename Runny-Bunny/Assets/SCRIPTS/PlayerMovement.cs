@@ -1,7 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    // Character selection fields
+    public CharacterDatabase characterDB;
+    public SpriteRenderer artworkSprite;
+    public int selectedOption = 0;
+
+    // Movement and animation fields
     public float speed = 5f;
     public float jumpForce = 500f; // Adjusted for better jump
     private Rigidbody2D rb;
@@ -11,8 +19,21 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight;
     private bool grounded;
 
+    // Start is called before the first frame update
     private void Start()
     {
+        // Character selection initialization
+        if (!PlayerPrefs.HasKey("selectedOption"))
+        {
+            selectedOption = 0;
+        }
+        else
+        {
+            Load();
+        }
+        updateCharacter(selectedOption);
+
+        // Movement initialization
         isFacingRight = true;
         rb = GetComponent<Rigidbody2D>(); // to get access
         animator = GetComponent<Animator>(); // Reference to animator from object
@@ -23,9 +44,11 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = 2f;
     }
 
+    // Update is called once per frame
     private void Update()
     {
-        float direction = Input.GetAxis("Horizontal"); // make bunny player move left & right
+        // Movement logic
+        float direction = Input.GetAxis("Horizontal"); // make player move left & right
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
 
         if (direction != 0)
@@ -37,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (direction > 0f)
-            transform.localScale = originalScale; // Use the original scale of bunny
+            transform.localScale = originalScale; // Use the original scale of the player
         else if (direction < 0f)
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
 
@@ -75,5 +98,18 @@ public class PlayerMovement : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
         transform.localScale = localScale;
+    }
+
+    // Character selection methods
+    private void updateCharacter(int selectedOption)
+    {
+        Character character = characterDB.GetCharacter(selectedOption);
+        artworkSprite.sprite = character.characterSprite;
+    }
+
+    private void Load()
+    {
+        selectedOption = PlayerPrefs.GetInt("selectedOption");
+        updateCharacter(selectedOption);
     }
 }
