@@ -33,7 +33,7 @@ public class EagleAi : MonoBehaviour
             rb.velocity = new Vector2(-Speed, 0);
         }
 
-        if (Vector2.Distance(transform.position, CurrentPoint.position) < 1.5f)
+        if (Vector2.Distance(transform.position, CurrentPoint.position) < 2f)
         {
             CurrentPoint = (CurrentPoint == PointB.transform) ? PointA.transform : PointB.transform;
         }
@@ -54,7 +54,7 @@ public class EagleAi : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(PointA.transform.position, 1.5f);
-        Gizmos.DrawWireSphere(PointB.transform.position, 1.5f);
+        Gizmos.DrawWireSphere(PointA.transform.position, 2f);
+        Gizmos.DrawWireSphere(PointB.transform.position, 2f);
     }
 }
