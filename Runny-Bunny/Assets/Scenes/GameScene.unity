@@ -3633,53 +3633,16 @@ GameObject:
   - component: {fileID: 1157572561}
   - component: {fileID: 1157572559}
   - component: {fileID: 1157572558}
-  - component: {fileID: 1157572557}
-  - component: {fileID: 1157572556}
   - component: {fileID: 1157572565}
+  - component: {fileID: 1157572567}
+  - component: {fileID: 1157572566}
   m_Layer: 6
   m_Name: Player 2
-  m_TagString: Player 2
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1157572556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157572555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94bc49261e81b0a4790ddff0ba8716ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StamCard: {fileID: 1314992986}
-  HealthCard: {fileID: 1021219072}
-  MentalCard: {fileID: 286968286}
-  CardPanel: {fileID: 2130478713}
-  StamButton: {fileID: 318374221}
-  HealthButton: {fileID: 1110062607}
-  MentalButton: {fileID: 994312671}
-  i: 0
---- !u!114 &1157572557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157572555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a5f86c1a7f408b4789645d1c15eacbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isFull: 000000
-  slots:
-  - {fileID: 416151140}
-  - {fileID: 1415864154}
-  - {fileID: 1228926311}
 --- !u!114 &1157572558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3869,6 +3832,43 @@ MonoBehaviour:
   selectedOption: 0
   speed: 5
   jumpForce: 500
+--- !u!114 &1157572566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157572555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a564a1c7393fb4aad4471b0cb774dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StamCard: {fileID: 1314992986}
+  HealthCard: {fileID: 1021219072}
+  MentalCard: {fileID: 286968286}
+  CardPanel: {fileID: 2130478713}
+  StamButton: {fileID: 318374221}
+  HealthButton: {fileID: 1110062607}
+  MentalButton: {fileID: 994312671}
+  i: 0
+--- !u!114 &1157572567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157572555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 273576e9f1ea3a04bb49202b27b47cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFull: 000000
+  slots:
+  - {fileID: 416151140}
+  - {fileID: 1415864154}
+  - {fileID: 1228926311}
 --- !u!1 &1159379300
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,7 +5461,7 @@ Transform:
   m_GameObject: {fileID: 1733275497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.08, y: -0.63, z: 0}
+  m_LocalPosition: {x: -6.4, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
