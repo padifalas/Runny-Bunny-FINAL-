@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthCard : MonoBehaviour
+public class Cards : MonoBehaviour
 {
     private Player1Inventory inventory;
 
@@ -12,11 +12,20 @@ public class HealthCard : MonoBehaviour
         inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Player1Inventory>();
     }
 
-    public void OnClick()
+    public void OnHealthClick()
     {
         Destroy(gameObject);
     }
 
+    public void OnStaminaClick()
+    {
+        Destroy(gameObject);
+    }
+
+    public void OnMentalClick()
+    {
+        Destroy(gameObject);
+    }
     // Update is called once per frame
     void Update()
     {
