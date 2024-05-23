@@ -6,6 +6,8 @@ public class Cards : MonoBehaviour
 {
     private Player1Inventory inventory;
 
+    private Stats stats;
+
     // Start is called before the first frame update
     void Start()
     {
