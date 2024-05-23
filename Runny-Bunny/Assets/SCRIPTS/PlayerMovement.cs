@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // Movement logic
-        float direction = Input.GetAxis("Horizontal"); // make player move left & right
+        float direction = Input.GetAxis("HorizontalP1"); // make player move left & right
         rb.velocity = new Vector2(direction * speed, rb.velocity.y);
 
         if (direction != 0)
