@@ -31,10 +31,10 @@ public class CardTrigger : MonoBehaviour
                 CardPanel.SetActive(true);
             }
 
-            /*else
+            else
             {
                 CardPanel.SetActive(false);
-            }*/
+            }
         }
 
         if (collision.gameObject.tag == "Player2")
@@ -46,10 +46,10 @@ public class CardTrigger : MonoBehaviour
                 CardPanel.SetActive(true);
             }
 
-            /*else
+            else
             {
                 CardPanel.SetActive(false);
-            }*/
+            }
         }
     }
 

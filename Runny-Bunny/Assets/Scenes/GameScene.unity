@@ -3326,6 +3326,7 @@ GameObject:
   - component: {fileID: 1110062609}
   - component: {fileID: 1110062608}
   - component: {fileID: 1110062607}
+  - component: {fileID: 1110062610}
   m_Layer: 5
   m_Name: Health Button
   m_TagString: Untagged
@@ -3447,6 +3448,35 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110062605}
   m_CullTransparentMesh: 1
+--- !u!114 &1110062610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1110062605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eea5584380b8f458cffa187d920cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2Click:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1157572566}
+        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
+        m_MethodName: OnHealthClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  rightClickColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  rightClickColourDuration: 0.1
 --- !u!1 &1111862137
 GameObject:
   m_ObjectHideFlags: 0
