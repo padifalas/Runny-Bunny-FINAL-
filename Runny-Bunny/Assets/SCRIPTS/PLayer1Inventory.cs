@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayer1Inventory : MonoBehaviour
+public class Player1Inventory : MonoBehaviour
 {
     public bool[] isFull;
 
