@@ -30,6 +30,7 @@ public class CardTrigger : MonoBehaviour
 
                 CardPanel.SetActive(true);
             }
+
             else
             {
                 CardPanel.SetActive(false);

@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public GameObject player;
+    public GameObject player2;
     public float speed;
     public float distanceBetween;
     public float knockbackForce = 10f; // Knockback force to apply to the player
@@ -25,7 +26,7 @@ public class EnemyAI : MonoBehaviour
         if (distance < distanceBetween)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
-        }
+        }       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -39,5 +40,15 @@ public class EnemyAI : MonoBehaviour
                 playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
+
+        /*if (collision.gameObject.CompareTag("Player2"))
+        {
+            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (playerRb != null)
+            {
+                Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
+                playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+            }
+        }*/
     }
 }
