@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight;
     private bool grounded;
 
+    public float BounceUpForce = 100f;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -111,5 +113,15 @@ public class PlayerMovement : MonoBehaviour
     {
         selectedOption = PlayerPrefs.GetInt("selectedOption");
         updateCharacter(selectedOption);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "KillCollider")
+        {
+            rb.AddForce(Vector2.up * BounceUpForce, ForceMode2D.Impulse);
+
+            Debug.Log("Hit");
+        }
     }
 }

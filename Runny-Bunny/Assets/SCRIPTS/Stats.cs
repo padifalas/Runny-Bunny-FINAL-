@@ -51,6 +51,23 @@ public class Stats : MonoBehaviour
         StaminaTxt.text = "Stamina: " + Stamina;
     }
 
+    /*public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Health -= 2;
+
+            HealthTxt.text = "Health: " + Health;
+        }
+
+        if (collision.gameObject.tag == "Player2")
+        {
+            Health2 -= 2;
+
+            HealthTxt2.text = "Health: " + Health2;
+        }
+    }*/
+
     // Start is called before the first frame update
     void Start()
     {
