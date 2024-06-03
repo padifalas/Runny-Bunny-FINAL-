@@ -2799,7 +2799,6 @@ GameObject:
   m_Component:
   - component: {fileID: 598663336}
   - component: {fileID: 598663338}
-  - component: {fileID: 598663337}
   m_Layer: 0
   m_Name: P1Cam
   m_TagString: Untagged
@@ -2822,14 +2821,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 503561293}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &598663337
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 598663335}
-  m_Enabled: 1
 --- !u!20 &598663338
 Camera:
   m_ObjectHideFlags: 0
@@ -3997,6 +3988,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1157572555}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (2)
@@ -5909,6 +5904,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1157572555}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (1)
@@ -7589,7 +7588,7 @@ GameObject:
   - component: {fileID: 1971117150}
   - component: {fileID: 1971117151}
   m_Layer: 6
-  m_Name: P1Cam
+  m_Name: P2Cam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8316,6 +8315,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2
+      value: 
+      objectReference: {fileID: 1157572555}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME
