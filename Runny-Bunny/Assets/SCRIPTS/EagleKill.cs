@@ -10,6 +10,11 @@ public class EagleKill : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.tag == "Player2")
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Start is called before the first frame update

@@ -12,6 +12,11 @@ public class GnomeKill : MonoBehaviour
         {
             Destroy(transform.parent.gameObject);
         }
+
+        if (collision.gameObject.tag == "Player2")
+        {
+            Destroy(transform.parent.gameObject);
+        }
     }
 
     // Start is called before the first frame update
