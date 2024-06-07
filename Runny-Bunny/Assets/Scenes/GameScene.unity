@@ -1133,6 +1133,7 @@ GameObject:
   - component: {fileID: 286968289}
   - component: {fileID: 286968288}
   - component: {fileID: 286968291}
+  - component: {fileID: 286968292}
   m_Layer: 5
   m_Name: Mental Card
   m_TagString: Untagged
@@ -1278,6 +1279,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d1e5a15dfb92c4398f6ea7309850f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &286968292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286968286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eea5584380b8f458cffa187d920cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2Click:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 286968291}
+        m_TargetAssemblyTypeName: Cards, Assembly-CSharp
+        m_MethodName: OnMentalClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnMental2Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  rightClickColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  rightClickColourDuration: 0.1
 --- !u!1 &288839446
 GameObject:
   m_ObjectHideFlags: 0
@@ -4927,6 +4969,7 @@ GameObject:
   - component: {fileID: 1021219075}
   - component: {fileID: 1021219074}
   - component: {fileID: 1021219077}
+  - component: {fileID: 1021219078}
   m_Layer: 5
   m_Name: Health Card
   m_TagString: Untagged
@@ -5072,6 +5115,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d1e5a15dfb92c4398f6ea7309850f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1021219078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021219072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eea5584380b8f458cffa187d920cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2Click:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1021219077}
+        m_TargetAssemblyTypeName: Cards, Assembly-CSharp
+        m_MethodName: OnHealthClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealth2Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  rightClickColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  rightClickColourDuration: 0.1
 --- !u!1 &1045175777
 GameObject:
   m_ObjectHideFlags: 0
@@ -6374,6 +6458,7 @@ GameObject:
   - component: {fileID: 1314992989}
   - component: {fileID: 1314992988}
   - component: {fileID: 1314992991}
+  - component: {fileID: 1314992992}
   m_Layer: 5
   m_Name: Stamina Card
   m_TagString: Untagged
@@ -6519,6 +6604,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d1e5a15dfb92c4398f6ea7309850f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1314992992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314992986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83eea5584380b8f458cffa187d920cc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2Click:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1314992991}
+        m_TargetAssemblyTypeName: Cards, Assembly-CSharp
+        m_MethodName: OnStaminaClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStamina2Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  rightClickColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  rightClickColourDuration: 0.1
 --- !u!1 &1340349349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7768,7 +7894,7 @@ Transform:
   m_GameObject: {fileID: 1733275497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.8, y: -0.63, z: 0}
+  m_LocalPosition: {x: -13.3, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class Stats : MonoBehaviour
+public class P1Stats : MonoBehaviour
 {
     public TextMeshProUGUI HealthTxt;
 
@@ -49,6 +49,25 @@ public class Stats : MonoBehaviour
         Stamina += 2;
 
         StaminaTxt.text = "Stamina: " + Stamina;
+    }
+    public void OnHealth2Click()
+    {
+        Health2 += 1;
+
+        HealthTxt2.text = "Health: " + Health2;
+    }
+    public void OnMental2Click()
+    {
+        Mental2 += 3;
+
+        MentalTxt2.text = "Mental: " + Health2;
+    }
+
+    public void OnStamina2Click()
+    {
+        Stamina2 += 2;
+
+        StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
     /*public void OnTriggerEnter2D(Collider2D collision)
