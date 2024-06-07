@@ -2838,7 +2838,7 @@ MonoBehaviour:
   characterDB: {fileID: 11400000, guid: a627682a321647c4b8f094ab0f98b2e3, type: 2}
   artworkSprite: {fileID: 503561292}
   selectedOption: 0
-  speed: 8
+  speed: 10
   jumpForce: 600
   BounceUpForce: 20
 --- !u!95 &503561297
@@ -12269,8 +12269,6 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 0fe2ba5e5f387544da37ba10cae23367, type: 3}
   - m_RefCount: 148
     m_Data: {fileID: 21300000, guid: 6d818a8c71d908a43bc6ee6b10bcced0, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 299
     m_Data:
