@@ -2838,7 +2838,7 @@ MonoBehaviour:
   characterDB: {fileID: 11400000, guid: a627682a321647c4b8f094ab0f98b2e3, type: 2}
   artworkSprite: {fileID: 503561292}
   selectedOption: 0
-  speed: 10
+  speed: 8
   jumpForce: 600
   BounceUpForce: 20
 --- !u!95 &503561297
