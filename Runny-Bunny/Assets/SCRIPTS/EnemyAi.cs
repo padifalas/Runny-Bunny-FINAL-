@@ -32,7 +32,6 @@ public class EnemyAI : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }       
-
         else if (distance2 < distanceBetween)
         {
             transform.position = Vector2.MoveTowards(transform.position, player2.transform.position, speed * Time.deltaTime);
@@ -41,22 +40,13 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
         {
             Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
             if (playerRb != null)
             {
                 Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
-                playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-            }
-        }
-
-        if (collision.gameObject.CompareTag("Player2"))
-        {
-            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-            {
-                Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
+                knockbackDirection.y = 0; // Ensure the knockback is only horizontal
                 playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
