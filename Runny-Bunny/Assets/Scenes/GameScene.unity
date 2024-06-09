@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 121985428}
   - component: {fileID: 121985431}
   - component: {fileID: 121985430}
+  - component: {fileID: 121985432}
   m_Layer: 0
   m_Name: Eagle
   m_TagString: KillCollider
@@ -983,6 +984,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.6722417, y: 2.2030172}
   m_EdgeRadius: 0
+--- !u!95 &121985432
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121985423}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c832fe35849464d4f9970255d1fed63a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &190603372
 GameObject:
   m_ObjectHideFlags: 0
