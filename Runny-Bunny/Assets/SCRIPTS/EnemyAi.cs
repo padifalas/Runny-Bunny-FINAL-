@@ -6,7 +6,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject player2;
     public float speed;
     public float distanceBetween;
-    public float knockbackForce = 10f; // Knockback force to apply to the player
+    public float knockbackForce = 30f; // Knockback force to apply to the player
 
     private float distance;
     private float distance2;
