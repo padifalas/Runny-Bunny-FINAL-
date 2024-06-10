@@ -50,12 +50,12 @@ public class Player2Movement : MonoBehaviour
     {
         Vector2 Direction = Vector2.zero;
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.J))
         {
             Direction.x -= 1.0f;
         }
 
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.L))
         {
             Direction.x += 1.0f;
         }
@@ -85,7 +85,7 @@ public class Player2Movement : MonoBehaviour
         else if (direction < 0f)
             transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && jumpsRemaining > 0)
+        if (Input.GetKeyDown(KeyCode.I) && jumpsRemaining > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset Y velocity before jump
             rb.AddForce(new Vector2(0f, jumpForce));

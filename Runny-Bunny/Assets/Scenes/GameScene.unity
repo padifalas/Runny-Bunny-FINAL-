@@ -707,7 +707,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 221761973}
     m_Modifications:
     - target: {fileID: 2941046774349681013, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_Name
@@ -723,11 +723,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.x
@@ -747,11 +747,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalPosition.x
@@ -771,23 +783,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -822,6 +834,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+--- !u!224 &52392634 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+  m_PrefabInstance: {fileID: 52392633}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &72506166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,6 +2043,8 @@ RectTransform:
   - {fileID: 1524115627}
   - {fileID: 921308087}
   - {fileID: 106716717}
+  - {fileID: 1610721999}
+  - {fileID: 52392634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9215,7 +9234,6 @@ GameObject:
   - component: {fileID: 1079918928}
   - component: {fileID: 1079918927}
   - component: {fileID: 1079918926}
-  - component: {fileID: 1079918925}
   - component: {fileID: 1079918924}
   m_Layer: 0
   m_Name: BlackJack3
@@ -9238,33 +9256,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 72506167}
---- !u!50 &1079918925
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079918923}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1079918926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13643,7 +13634,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 221761973}
     m_Modifications:
     - target: {fileID: 1294933909877167860, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13663,11 +13654,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_Pivot.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_Pivot.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13687,11 +13678,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 1920
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13711,23 +13714,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -13758,6 +13761,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+--- !u!224 &1610721999 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+  m_PrefabInstance: {fileID: 1610721998}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1626880593
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,7 +13907,6 @@ GameObject:
   - component: {fileID: 1637688627}
   - component: {fileID: 1637688626}
   - component: {fileID: 1637688625}
-  - component: {fileID: 1637688624}
   - component: {fileID: 1637688623}
   m_Layer: 0
   m_Name: BlackJack3 (3)
@@ -13922,33 +13929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 1535551229}
---- !u!50 &1637688624
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637688622}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1637688625
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15369,7 +15349,6 @@ GameObject:
   - component: {fileID: 1843513405}
   - component: {fileID: 1843513404}
   - component: {fileID: 1843513403}
-  - component: {fileID: 1843513402}
   - component: {fileID: 1843513401}
   m_Layer: 0
   m_Name: BlackJack2
@@ -15392,33 +15371,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 1206262104}
---- !u!50 &1843513402
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843513400}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1843513403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16767,7 +16719,6 @@ GameObject:
   - component: {fileID: 1983604802}
   - component: {fileID: 1983604801}
   - component: {fileID: 1983604805}
-  - component: {fileID: 1983604804}
   - component: {fileID: 1983604803}
   m_Layer: 0
   m_Name: BlackJack1
@@ -16858,33 +16809,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 1962953978}
---- !u!50 &1983604804
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1983604799}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &1983604805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17723,7 +17647,6 @@ GameObject:
   - component: {fileID: 2034416971}
   - component: {fileID: 2034416970}
   - component: {fileID: 2034416969}
-  - component: {fileID: 2034416968}
   - component: {fileID: 2034416967}
   m_Layer: 0
   m_Name: BlackJack3 (2)
@@ -17746,33 +17669,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 1948688119}
---- !u!50 &2034416968
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2034416966}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2034416969
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17986,7 +17882,6 @@ GameObject:
   - component: {fileID: 2082107662}
   - component: {fileID: 2082107661}
   - component: {fileID: 2082107660}
-  - component: {fileID: 2082107659}
   - component: {fileID: 2082107658}
   m_Layer: 0
   m_Name: BlackJack3 (1)
@@ -18009,33 +17904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7854142451512390011, guid: a03f1fd7f72c4fa4797236f894d92054, type: 3}
   bulletPos: {fileID: 306551089}
---- !u!50 &2082107659
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082107657}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2082107660
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19093,8 +18961,6 @@ SceneRoots:
   - {fileID: 882456185}
   - {fileID: 1733275500}
   - {fileID: 221761973}
-  - {fileID: 1610721998}
-  - {fileID: 52392633}
   - {fileID: 1442243173}
   - {fileID: 2023677556}
   - {fileID: 255918915}
