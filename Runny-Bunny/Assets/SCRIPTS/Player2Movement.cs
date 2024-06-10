@@ -19,7 +19,7 @@ public class Player2Movement : MonoBehaviour
     private bool isFacingRight;
     private bool grounded;
 
-    public float BounceUpForce = 20f;
+    public float BounceUpForce = 15f;
 
     // Start is called before the first frame update
     private void Start()
