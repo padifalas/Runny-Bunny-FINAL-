@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Player2
   - KillCollider
+  - Player1Name
+  - Player2Name
   layers:
   - Default
   - TransparentFX
