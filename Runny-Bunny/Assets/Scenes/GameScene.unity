@@ -7501,8 +7501,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   holdDuration: 5
-  bunny: {fileID: 503561291}
-  cageCollider: {fileID: 2112715282}
+  bunny1: {fileID: 503561291}
+  bunny2: {fileID: 1157572555}
+  cageCollider1: {fileID: 2112715282}
+  cageCollider2: {fileID: 520355457}
 --- !u!4 &726426857
 Transform:
   m_ObjectHideFlags: 0

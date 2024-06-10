@@ -5,52 +5,77 @@ using UnityEngine;
 public class CageController : MonoBehaviour
 {
     private bool eKeyDown = false;
-    private float holdTimer = 0f;
+    private bool uKeyDown = false;
+    private float holdTimerE = 0f;
+    private float holdTimerU = 0f;
     public float holdDuration = 5f;
-    public GameObject bunny;
-    public Collider2D cageCollider; 
+    public GameObject bunny1;
+    public GameObject bunny2;
+    public Collider2D cageCollider1; 
+    public Collider2D cageCollider2; 
 
     void Update()
     {
-    
+        // Player 1 Key Handling
         if (Input.GetKeyDown(KeyCode.E))
         {
             eKeyDown = true;
-            holdTimer = 0f; 
+            holdTimerE = 0f; 
         }
-
         
         if (Input.GetKeyUp(KeyCode.E))
         {
             eKeyDown = false;
-            holdTimer = 0f; 
+            holdTimerE = 0f; 
         }
 
-        
         if (eKeyDown)
         {
-            holdTimer += Time.deltaTime;
+            holdTimerE += Time.deltaTime;
 
-            
-            if (holdTimer >= holdDuration)
+            if (holdTimerE >= holdDuration)
             {
-                DisableCageColliders();
-                ReleaseBunny();
-                
+                DisableCageColliders(cageCollider1);
+                ReleaseBunny(bunny1);
                 Debug.Log("Bunny1 can move!!");
+            }
+        }
+
+        // Player 2 Key Handling
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            uKeyDown = true;
+            holdTimerU = 0f; 
+        }
+
+        if (Input.GetKeyUp(KeyCode.U))
+        {
+            uKeyDown = false;
+            holdTimerU = 0f; 
+        }
+
+        if (uKeyDown)
+        {
+            holdTimerU += Time.deltaTime;
+
+            if (holdTimerU >= holdDuration)
+            {
+                DisableCageColliders(cageCollider2);
+                ReleaseBunny(bunny2);
+                Debug.Log("Bunny2 can move!!");
             }
         }
     }
 
-    void DisableCageColliders()
+    void DisableCageColliders(Collider2D cageCollider)
     {
-        // Disable the cage collider
+        
         cageCollider.enabled = false;
     }
 
-    void ReleaseBunny()
+    void ReleaseBunny(GameObject bunny)
     {
-        //bunny movement script called hereee
+        // player movemnt acript is enabled btw
         bunny.GetComponent<PlayerMovement>().enabled = true;
     }
 }
