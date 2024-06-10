@@ -7,16 +7,20 @@ public class EagleAi : MonoBehaviour
     public GameObject PointA;
     public GameObject PointB;
     public float Speed;
-    public float knockbackForce = 10f; 
+    public float knockbackForce = 10f;
 
     private Rigidbody2D rb;
     private Transform CurrentPoint;
-    private bool facingRight = true; // to track the eagle's facing direction
+    private bool facingRight = false; // Initially facing left since we need to switch directions
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         CurrentPoint = PointB.transform;
+        if (!facingRight)
+        {
+            Flip();
+        }
     }
 
     void Update()
