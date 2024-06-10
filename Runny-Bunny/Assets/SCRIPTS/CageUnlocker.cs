@@ -8,7 +8,7 @@ public class CageController : MonoBehaviour
     private bool uKeyDown = false;
     private float holdTimerE = 0f;
     private float holdTimerU = 0f;
-    public float holdDuration = 5f;
+    public float holdDuration = 3f;
     public GameObject bunny1;
     public GameObject bunny2;
     public Collider2D cageCollider1; 
@@ -17,13 +17,13 @@ public class CageController : MonoBehaviour
     void Update()
     {
         // Player 1 Key Handling
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             eKeyDown = true;
             holdTimerE = 0f; 
         }
         
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
             eKeyDown = false;
             holdTimerE = 0f; 
