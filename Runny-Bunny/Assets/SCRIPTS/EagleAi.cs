@@ -11,7 +11,7 @@ public class EagleAi : MonoBehaviour
 
     private Rigidbody2D rb;
     private Transform CurrentPoint;
-
+    private bool facingRight = true; // to track the eagle's facing direction
 
     void Start()
     {
@@ -19,7 +19,6 @@ public class EagleAi : MonoBehaviour
         CurrentPoint = PointB.transform;
     }
 
-  
     void Update()
     {
         Vector2 point = CurrentPoint.position - transform.position;
@@ -27,16 +26,32 @@ public class EagleAi : MonoBehaviour
         if (CurrentPoint == PointB.transform)
         {
             rb.velocity = new Vector2(Speed, 0);
+            if (!facingRight)
+            {
+                Flip();
+            }
         }
         else
         {
             rb.velocity = new Vector2(-Speed, 0);
+            if (facingRight)
+            {
+                Flip();
+            }
         }
 
         if (Vector2.Distance(transform.position, CurrentPoint.position) < 2f)
         {
             CurrentPoint = (CurrentPoint == PointB.transform) ? PointA.transform : PointB.transform;
         }
+    }
+
+    private void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -50,16 +65,6 @@ public class EagleAi : MonoBehaviour
                 playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
-
-        /*if (collision.gameObject.CompareTag("Player2"))
-        {
-            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-            {
-                Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
-                playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-            }
-        }*/
     }
 
     private void OnDrawGizmos()
