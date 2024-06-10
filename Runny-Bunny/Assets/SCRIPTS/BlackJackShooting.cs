@@ -22,7 +22,7 @@ public class BlackJackShooting : MonoBehaviour
     {
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
-        Debug.Log(distance);
+        //Debug.Log(distance);
 
         if (distance < 10)
         {
@@ -36,7 +36,7 @@ public class BlackJackShooting : MonoBehaviour
         }
 
         float distance2 = Vector2.Distance(transform.position, player2.transform.position);
-        Debug.Log(distance2);
+        //Debug.Log(distance2);
 
         if (distance2 < 10)
         {

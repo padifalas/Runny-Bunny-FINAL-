@@ -24,7 +24,7 @@ public class BlackJackBulletScript : MonoBehaviour
 
 
         rb2 = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player2");
+        player2 = GameObject.FindGameObjectWithTag("Player2");
 
         Vector3 direction2 = player2.transform.position - transform.position;
         rb2.velocity = new Vector2(direction2.x, direction2.y).normalized * force;
