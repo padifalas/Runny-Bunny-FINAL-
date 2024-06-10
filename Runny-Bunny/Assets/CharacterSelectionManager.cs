@@ -1,95 +1,72 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class CharacterSelectionManager : MonoBehaviour
+public class CharacterSelection : MonoBehaviour
 {
-    public GameObject[] bunnyPrefabs; 
-    public Image displayImagePlayer1; 
-    public Image displayImagePlayer2; 
-    public Button confirmButtonPlayer1;
-    public Button confirmButtonPlayer2; 
-    public Button startGameButton; 
-    public Button backButtonPlayer1;
-    public Button nextButtonPlayer1; 
-    public Button backButtonPlayer2; 
-    public Button nextButtonPlayer2; 
+    public Button player1ConfirmButton;
+    public Button player2ConfirmButton;
+    public Button startButton;
+    public Transform player1SpawnPoint;
+    public Transform player2SpawnPoint;
+    public GameObject player1BunnyCharacterPrefab;
+    public GameObject player2BunnyCharacterPrefab;
 
-    private int currentAvatarIndexPlayer1 = 0;
-    private int currentAvatarIndexPlayer2 = 0;
+    private GameObject player1SelectedCharacter;
+    private GameObject player2SelectedCharacter;
+
     private bool player1Confirmed = false;
     private bool player2Confirmed = false;
 
-    void Start()
+    public void Start()
     {
-        startGameButton.interactable = false; 
-        confirmButtonPlayer1.interactable = false;
-        confirmButtonPlayer2.interactable = false;
-        UpdateDisplay();
+        // Disable the start button initially
+        startButton.interactable = false;
+
+        // Add onClick listeners to the confirm buttons
+        player1ConfirmButton.onClick.AddListener(Player1Confirm);
+        player2ConfirmButton.onClick.AddListener(Player2Confirm);
+
+        // Add onClick listener to the start button
+        startButton.onClick.AddListener(StartGame);
     }
 
-    void UpdateDisplay()
+    private void Player1Confirm()
     {
-        displayImagePlayer1.sprite = bunnyPrefabs[currentAvatarIndexPlayer1].GetComponent<SpriteRenderer>().sprite;
-        displayImagePlayer2.sprite = bunnyPrefabs[currentAvatarIndexPlayer2].GetComponent<SpriteRenderer>().sprite;
-    }
+        // Instantiate the selected character for player 1 at the spawn point
+        player1SelectedCharacter = Instantiate(player1BunnyCharacterPrefab, player1SpawnPoint.position, Quaternion.identity);
 
-    public void NextAvatarPlayer1()
-    {
-        currentAvatarIndexPlayer1 = (currentAvatarIndexPlayer1 + 1) % bunnyPrefabs.Length;
-        UpdateDisplay();
-        confirmButtonPlayer1.interactable = true;
-    }
-
-    public void PreviousAvatarPlayer1()
-    {
-        currentAvatarIndexPlayer1 = (currentAvatarIndexPlayer1 - 1 + bunnyPrefabs.Length) % bunnyPrefabs.Length;
-        UpdateDisplay();
-        confirmButtonPlayer1.interactable = true;
-    }
-
-    public void NextAvatarPlayer2()
-    {
-        currentAvatarIndexPlayer2 = (currentAvatarIndexPlayer2 + 1) % bunnyPrefabs.Length;
-        UpdateDisplay();
-        confirmButtonPlayer2.interactable = true;
-    }
-
-    public void PreviousAvatarPlayer2()
-    {
-        currentAvatarIndexPlayer2 = (currentAvatarIndexPlayer2 - 1 + bunnyPrefabs.Length) % bunnyPrefabs.Length;
-        UpdateDisplay();
-        confirmButtonPlayer2.interactable = true;
-    }
-
-    public void ConfirmSelectionPlayer1()
-    {
+        // Set player 1 confirmed flag
         player1Confirmed = true;
-        CheckSelections();
+
+        // Check if both players have confirmed
+        CheckIfBothPlayersConfirmed();
     }
 
-    public void ConfirmSelectionPlayer2()
+    private void Player2Confirm()
     {
+        // Instantiate the selected character for player 2 at the spawn point
+        player2SelectedCharacter = Instantiate(player2BunnyCharacterPrefab, player2SpawnPoint.position, Quaternion.identity);
+
+        // Set player 2 confirmed flag
         player2Confirmed = true;
-        CheckSelections();
+
+        // Check if both players have confirmed
+        CheckIfBothPlayersConfirmed();
     }
 
-    private void CheckSelections()
+    private void CheckIfBothPlayersConfirmed()
     {
-        // Enable the start button only if both players have confirmed their selection
+        // Enable start button if both players have confirmed
         if (player1Confirmed && player2Confirmed)
         {
-            startGameButton.interactable = true;
+            startButton.interactable = true;
         }
     }
 
-    public void StartGame()
+    private void StartGame()
     {
-        if (player1Confirmed && player2Confirmed)
-        {
-            PlayerPrefs.SetInt("SelectedAvatarIndexPlayer1", currentAvatarIndexPlayer1);
-            PlayerPrefs.SetInt("SelectedAvatarIndexPlayer2", currentAvatarIndexPlayer2);
-            SceneManager.LoadScene("GameScene");
-        }
+        // Load the game scene
+        SceneManager.LoadScene("GameScene");
     }
 }

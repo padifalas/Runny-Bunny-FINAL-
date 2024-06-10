@@ -726,18 +726,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d779773c4c5084a81ffa02ad867590, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bunnyPrefabs:
-  - {fileID: 2164431182518945476, guid: 28c79b850c75b4d4ea160787ecf6d53f, type: 3}
-  - {fileID: 522737227}
-  displayImagePlayer1: {fileID: 0}
-  displayImagePlayer2: {fileID: 0}
-  confirmButtonPlayer1: {fileID: 0}
-  confirmButtonPlayer2: {fileID: 0}
-  startGameButton: {fileID: 1115626753}
-  backButtonPlayer1: {fileID: 0}
-  nextButtonPlayer1: {fileID: 0}
-  backButtonPlayer2: {fileID: 0}
-  nextButtonPlayer2: {fileID: 0}
+  player1ConfirmButton: {fileID: 0}
+  player2ConfirmButton: {fileID: 0}
+  startButton: {fileID: 1115626753}
+  player1SpawnPoint: {fileID: 0}
+  player2SpawnPoint: {fileID: 0}
+  player1BunnyCharacterPrefab: {fileID: 1787769693}
+  player2BunnyCharacterPrefab: {fileID: 522737227}
 --- !u!1 &1102877076
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,8 +936,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1094032215}
-        m_TargetAssemblyTypeName: CharacterSelectionManager, Assembly-CSharp
-        m_MethodName: StartGame
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+        m_MethodName: Start
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
