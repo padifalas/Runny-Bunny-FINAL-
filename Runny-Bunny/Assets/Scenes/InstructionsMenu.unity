@@ -631,14 +631,14 @@ MonoBehaviour:
   m_text: 'Player 2
 
 
-    Move: Left Arrow and Right Arrow
+    Move: J and L
 
 
-    Jump: Up Arrow
+    Jump: I
 
 
-    Double
-    Jump: Double Tap Up Arrow
+    Double Jump: Double Tap
+    I
 
 
     Use RIGHT CLICK on any Buttons or Cards'
