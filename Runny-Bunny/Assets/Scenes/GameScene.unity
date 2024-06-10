@@ -5786,8 +5786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 039ad0687780e774fa4fa9b5d4cfd150, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1BunnyCharacterPrefab: {fileID: 503561291}
-  player2BunnyCharacterPrefab: {fileID: 1157572555}
   player1SpawnPoint: {fileID: 1512070616}
   player2SpawnPoint: {fileID: 1504729563}
 --- !u!4 &548047969
