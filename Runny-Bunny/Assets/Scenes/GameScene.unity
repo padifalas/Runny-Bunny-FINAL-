@@ -13762,7 +13762,10 @@ MonoBehaviour:
   Stamina2: 5
   MentalTxt2: {fileID: 1986667770}
   Mental2: 5
-  Player1: 0
+  Player1: {fileID: 503561291}
+  Player2: {fileID: 1157572555}
+  P1Spawn: {fileID: 1512070615}
+  P2Spawn: {fileID: 1504729562}
 --- !u!1 &1177163524
 GameObject:
   m_ObjectHideFlags: 0

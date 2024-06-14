@@ -145,6 +145,7 @@ public class Player2Pickup : MonoBehaviour
         }
     }
 
+
     public void OnStaminaClick3()
     {
         CardPanel3.SetActive(false);

@@ -6,30 +6,38 @@ using UnityEngine;
 public class P1Stats : MonoBehaviour
 {
     public TextMeshProUGUI HealthTxt;
-
     public float Health = 5;
 
     public TextMeshProUGUI StaminaTxt;
-
     public float Stamina = 5;
 
     public TextMeshProUGUI MentalTxt;
-
     public float Mental = 5;
 
     public TextMeshProUGUI HealthTxt2;
-
     public float Health2 = 5;
 
     public TextMeshProUGUI StaminaTxt2;
-
     public float Stamina2 = 5;
 
     public TextMeshProUGUI MentalTxt2;
+    public float Mental2 = 5;   
 
-    public float Mental2 = 5;
+    public GameObject Player1;
+    public GameObject Player2;
 
-    public bool Player1;
+    public GameObject P1Spawn;
+    public GameObject P2Spawn;
+
+    public void Died1()
+    {
+       
+    }
+
+    public void Died2()
+    {
+        
+    }
 
     public void OnHealthClick()
     {
@@ -177,6 +185,26 @@ public class P1Stats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Health <= 0)
+        {
+            Debug.Log("Player 1 Died");
+            
+            Health = 5;
+
+            HealthTxt.text = "Health: " + Health;
+
+            Player1.transform.position = P1Spawn.transform.position;
+        }
+
+        if (Health2 <= 0)
+        {
+            Debug.Log("Player 2 Died");
+
+            Health2 = 5;
+
+            HealthTxt2.text = "Health: " + Health2;
+
+            Player2.transform.position = P2Spawn.transform.position;
+        }
     }
 }
