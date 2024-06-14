@@ -137,6 +137,20 @@ public class P1Stats : MonoBehaviour
     }
 
 
+    public void Tomato1()
+    {
+        Stamina += 1;
+
+        StaminaTxt.text = "Stamina: " + Stamina;
+    }
+    public void Tomato2()
+    {
+        Stamina2 += 1;
+
+        StaminaTxt2.text = "Stamina: " + Stamina2;
+    }
+
+
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
