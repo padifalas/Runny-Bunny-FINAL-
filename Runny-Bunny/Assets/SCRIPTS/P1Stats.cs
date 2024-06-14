@@ -6,22 +6,22 @@ using UnityEngine.UI;
 
 public class P1Stats : MonoBehaviour
 {
-    public TextMeshProUGUI HealthTxt;
+    //public TextMeshProUGUI HealthTxt;
     public int Health = 5;
 
-    public TextMeshProUGUI StaminaTxt;
+    //public TextMeshProUGUI StaminaTxt;
     public int Stamina = 5;
 
-    public TextMeshProUGUI MentalTxt;
+    //public TextMeshProUGUI MentalTxt;
     public int Mental = 5;
 
-    public TextMeshProUGUI HealthTxt2;
+    //public TextMeshProUGUI HealthTxt2;
     public int Health2 = 5;
 
-    public TextMeshProUGUI StaminaTxt2;
+    //public TextMeshProUGUI StaminaTxt2;
     public int Stamina2 = 5;
 
-    public TextMeshProUGUI MentalTxt2;
+    //public TextMeshProUGUI MentalTxt2;
     public int Mental2 = 5;   
 
     public GameObject Player1;
@@ -45,7 +45,7 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
-        HealthTxt.text = "Health: " + Health;
+        //HealthTxt.text = "Health: " + Health;
     }
     public void OnMentalClick()
     {
@@ -53,7 +53,7 @@ public class P1Stats : MonoBehaviour
 
         M1.value = Mental;
 
-        MentalTxt.text = "Mental: " + Health;
+        //MentalTxt.text = "Mental: " + Health;
     }
 
     public void OnStaminaClick()
@@ -62,7 +62,7 @@ public class P1Stats : MonoBehaviour
 
         S1.value = Stamina;
 
-        StaminaTxt.text = "Stamina: " + Stamina;
+        //StaminaTxt.text = "Stamina: " + Stamina;
     }
 
 
@@ -72,7 +72,7 @@ public class P1Stats : MonoBehaviour
 
         H2.value = Health2;
 
-        HealthTxt2.text = "Health: " + Health2;
+        //HealthTxt2.text = "Health: " + Health2;
     }
     public void OnMental2Click()
     {
@@ -80,7 +80,7 @@ public class P1Stats : MonoBehaviour
 
         M2.value = Mental2;
 
-        MentalTxt2.text = "Mental: " + Health2;
+        //MentalTxt2.text = "Mental: " + Health2;
     }
 
     public void OnStamina2Click()
@@ -89,7 +89,7 @@ public class P1Stats : MonoBehaviour
 
         S2.value = Stamina2;
 
-        StaminaTxt2.text = "Stamina: " + Stamina2;
+        //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
 
@@ -99,7 +99,7 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
-        HealthTxt.text = "Health: " + Health;
+        //HealthTxt.text = "Health: " + Health;
     }
     public void GnomeAttack2()
     {
@@ -107,7 +107,7 @@ public class P1Stats : MonoBehaviour
 
         H2.value = Health2;
 
-        HealthTxt2.text = "Health: " + Health2;
+        //HealthTxt2.text = "Health: " + Health2;
     }
 
 
@@ -117,7 +117,7 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
-        HealthTxt.text = "Health: " + Health;
+        //HealthTxt.text = "Health: " + Health;
     }
     public void Blackjack2()
     {
@@ -125,7 +125,7 @@ public class P1Stats : MonoBehaviour
 
         H2.value = Health2;
 
-        HealthTxt2.text = "Health: " + Health2;
+        //HealthTxt2.text = "Health: " + Health2;
     }
 
 
@@ -135,7 +135,7 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
-        HealthTxt.text = "Health: " + Health;
+        //HealthTxt.text = "Health: " + Health;
     }
     public void EagleAttack2()
     {
@@ -143,7 +143,7 @@ public class P1Stats : MonoBehaviour
 
         H2.value = Health2;
 
-        HealthTxt2.text = "Health: " + Health2;
+        //HealthTxt2.text = "Health: " + Health2;
     }
 
 
@@ -153,13 +153,13 @@ public class P1Stats : MonoBehaviour
 
         M1.value = Mental;
 
-        MentalTxt.text = "Mental: " + Mental;
+        //MentalTxt.text = "Mental: " + Mental;
 
         Mental2 -= 1;
 
         M2.value = Mental2;
 
-        MentalTxt2.text = "Mental: " + Mental2;
+        //MentalTxt2.text = "Mental: " + Mental2;
     }
     public void EnemyKill2()
     {
@@ -167,13 +167,13 @@ public class P1Stats : MonoBehaviour
 
         M2.value = Mental2;
 
-        MentalTxt2.text = "Mental: " + Mental2;
+        //MentalTxt2.text = "Mental: " + Mental2;
 
         Mental -= 1;
 
         M1.value = Mental;
 
-        MentalTxt.text = "Mental: " + Mental;
+        //MentalTxt.text = "Mental: " + Mental;
     }
 
 
@@ -183,7 +183,7 @@ public class P1Stats : MonoBehaviour
 
         S1.value = Stamina;
 
-        StaminaTxt.text = "Stamina: " + Stamina;
+        //StaminaTxt.text = "Stamina: " + Stamina;
     }
     public void Tomato2()
     {
@@ -191,7 +191,7 @@ public class P1Stats : MonoBehaviour
 
         S2.value = Stamina2;
 
-        StaminaTxt2.text = "Stamina: " + Stamina2;
+        //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
 
@@ -229,7 +229,7 @@ public class P1Stats : MonoBehaviour
 
             H1.value = Health;
 
-            HealthTxt.text = "Health: " + Health;
+            //HealthTxt.text = "Health: " + Health;
 
             Player1.transform.position = P1Spawn.transform.position;
         }
@@ -242,7 +242,7 @@ public class P1Stats : MonoBehaviour
 
             H2.value = Health2;
 
-            HealthTxt2.text = "Health: " + Health2;
+            //HealthTxt2.text = "Health: " + Health2;
 
             Player2.transform.position = P2Spawn.transform.position;
         }
