@@ -50,6 +50,8 @@ public class P1Stats : MonoBehaviour
 
         StaminaTxt.text = "Stamina: " + Stamina;
     }
+
+
     public void OnHealth2Click()
     {
         Health2 += 1;
@@ -70,6 +72,7 @@ public class P1Stats : MonoBehaviour
         StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
+
     public void GnomeAttack1()
     {
         Health -= 1;
@@ -83,6 +86,7 @@ public class P1Stats : MonoBehaviour
         HealthTxt2.text = "Health: " + Health2;
     }
 
+
     public void Blackjack1()
     {
         Health -= 1;
@@ -95,6 +99,21 @@ public class P1Stats : MonoBehaviour
 
         HealthTxt2.text = "Health: " + Health2;
     }
+
+
+    public void EagleAttack1()
+    {
+        Health -= 1;
+
+        HealthTxt.text = "Health: " + Health;
+    }
+    public void EagleAttack2()
+    {
+        Health2 -= 1;
+
+        HealthTxt2.text = "Health: " + Health2;
+    }
+
 
     /*public void OnTriggerEnter2D(Collider2D collision)
     {

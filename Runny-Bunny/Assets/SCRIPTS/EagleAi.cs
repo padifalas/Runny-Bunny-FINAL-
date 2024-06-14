@@ -9,6 +9,8 @@ public class EagleAi : MonoBehaviour
     public float Speed;
     public float knockbackForce = 10f;
 
+    public P1Stats stats;
+
     private Rigidbody2D rb;
     private Transform CurrentPoint;
     private bool facingRight = false; // Initially facing left since we need to switch directions
@@ -21,6 +23,8 @@ public class EagleAi : MonoBehaviour
         {
             Flip();
         }
+
+        stats = GameObject.FindGameObjectWithTag("Stats").GetComponent<P1Stats>();
     }
 
     void Update()
@@ -58,16 +62,16 @@ public class EagleAi : MonoBehaviour
         transform.localScale = localScale;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (playerRb != null)
-            {
-                Vector2 knockbackDirection = (collision.transform.position - transform.position).normalized;
-                playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
-            }
+            stats.EagleAttack1();
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            stats.EagleAttack2();
         }
     }    
 

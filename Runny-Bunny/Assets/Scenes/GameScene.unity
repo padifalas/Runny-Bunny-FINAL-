@@ -1338,6 +1338,7 @@ MonoBehaviour:
   PointB: {fileID: 306418459}
   Speed: 3
   knockbackForce: 10
+  stats: {fileID: 0}
 --- !u!60 &121985428
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5080,7 +5081,6 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
-  stats: {fileID: 1173917618}
   KForce: 15
   KCounter: 0
   KTime: 0.2
@@ -8157,6 +8157,7 @@ MonoBehaviour:
   PointB: {fileID: 622014437}
   Speed: 2
   knockbackForce: 10
+  stats: {fileID: 1173917618}
 --- !u!212 &719636851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11088,7 +11089,6 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
-  stats: {fileID: 1173917618}
   KForce: 15
   KCounter: 0
   KTime: 0.2
@@ -11562,6 +11562,7 @@ MonoBehaviour:
   PointB: {fileID: 1828002613}
   Speed: 5
   knockbackForce: 10
+  stats: {fileID: 1173917618}
 --- !u!212 &1169843915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11626,7 +11627,7 @@ GameObject:
   - component: {fileID: 1173917618}
   m_Layer: 5
   m_Name: Stats
-  m_TagString: Untagged
+  m_TagString: Stats
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12487,6 +12488,7 @@ MonoBehaviour:
   PointB: {fileID: 1372718092}
   Speed: 11
   knockbackForce: 10
+  stats: {fileID: 1173917618}
 --- !u!212 &1236256073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14461,6 +14463,7 @@ MonoBehaviour:
   PointB: {fileID: 714731117}
   Speed: 3
   knockbackForce: 10
+  stats: {fileID: 1173917618}
 --- !u!212 &1488063200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18086,6 +18089,7 @@ MonoBehaviour:
   PointB: {fileID: 1729407367}
   Speed: 4
   knockbackForce: 10
+  stats: {fileID: 1173917618}
 --- !u!212 &1912686260
 SpriteRenderer:
   m_ObjectHideFlags: 0

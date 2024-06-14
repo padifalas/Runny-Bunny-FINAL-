@@ -12,6 +12,7 @@ TagManager:
   - Human
   - Gnome
   - Blackjack
+  - Stats
   layers:
   - Default
   - TransparentFX
