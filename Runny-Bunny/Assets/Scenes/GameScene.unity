@@ -6018,13 +6018,14 @@ MonoBehaviour:
   characterDB: {fileID: 11400000, guid: a627682a321647c4b8f094ab0f98b2e3, type: 2}
   artworkSprite: {fileID: 503561292}
   selectedOption: 0
-  speed: 8
+  speed: 10
   jumpForce: 900
   KForce: 15
   KCounter: 0
   KTime: 0.2
   KnockRight: 0
   BounceUpForce: 15
+  StamSlider: {fileID: 0}
 --- !u!95 &503561297
 Animator:
   serializedVersion: 5
@@ -13282,13 +13283,14 @@ MonoBehaviour:
   characterDB: {fileID: 11400000, guid: a627682a321647c4b8f094ab0f98b2e3, type: 2}
   artworkSprite: {fileID: 1157572563}
   selectedOption: 0
-  speed: 8
+  speed: 10
   jumpForce: 900
   KForce: 15
   KCounter: 0
   KTime: 0.2
   KnockRight: 0
   BounceUpForce: 15
+  StamSlider: {fileID: 258503940}
 --- !u!114 &1157572566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13867,17 +13869,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 834ce4b1b85141d408dc51781093bc3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthTxt: {fileID: 619415214}
   Health: 5
-  StaminaTxt: {fileID: 1772358020}
   Stamina: 5
-  MentalTxt: {fileID: 618854430}
   Mental: 5
-  HealthTxt2: {fileID: 1949560825}
   Health2: 5
-  StaminaTxt2: {fileID: 823694594}
   Stamina2: 5
-  MentalTxt2: {fileID: 1986667770}
   Mental2: 5
   Player1: {fileID: 503561291}
   Player2: {fileID: 1157572555}

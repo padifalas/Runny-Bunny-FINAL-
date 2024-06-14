@@ -246,5 +246,14 @@ public class P1Stats : MonoBehaviour
 
             Player2.transform.position = P2Spawn.transform.position;
         }
+
+        if (Stamina <= 0)
+        {
+            Debug.Log("Tired");
+
+            Stamina = 0;
+
+            S1.value = Stamina;
+        }
     }
 }

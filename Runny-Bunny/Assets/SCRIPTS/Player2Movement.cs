@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player2Movement : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class Player2Movement : MonoBehaviour
     public bool KnockRight;
 
     public float BounceUpForce = 15f;
+
+    public Slider StamSlider;
 
     // Start is called before the first frame update
     private void Start()
@@ -102,6 +105,16 @@ public class Player2Movement : MonoBehaviour
 
             // Set animator parameters
             animator.SetBool("RUN", direction != 0);
+
+            if (StamSlider.value == 0)
+            {
+                speed = 6f;
+            }
+
+            if (StamSlider.value == 10)
+            {
+                speed = 13f;
+            }
         }
 
         else
