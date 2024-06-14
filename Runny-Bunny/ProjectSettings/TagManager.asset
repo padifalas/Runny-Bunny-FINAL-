@@ -13,7 +13,6 @@ TagManager:
   - Gnome
   - Blackjack
   - Stats
-  - Tomato
   layers:
   - Default
   - TransparentFX
