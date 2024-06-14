@@ -10,6 +10,8 @@ TagManager:
   - Player1Name
   - Player2Name
   - Human
+  - Gnome
+  - Blackjack
   layers:
   - Default
   - TransparentFX

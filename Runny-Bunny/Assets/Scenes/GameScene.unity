@@ -5080,6 +5080,7 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
+  stats: {fileID: 1173917618}
   KForce: 15
   KCounter: 0
   KTime: 0.2
@@ -11087,6 +11088,7 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
+  stats: {fileID: 1173917618}
   KForce: 15
   KCounter: 0
   KTime: 0.2

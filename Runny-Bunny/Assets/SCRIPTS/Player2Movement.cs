@@ -17,7 +17,7 @@ public class Player2Movement : MonoBehaviour
     private int jumpsRemaining = 2; // No. of jumps allowed
     private Animator animator;
     private bool isFacingRight;
-    private bool grounded;
+    private bool grounded; 
 
     public float KForce;
     public float KCounter;
@@ -29,7 +29,7 @@ public class Player2Movement : MonoBehaviour
 
     // Start is called before the first frame update
     private void Start()
-    {
+    {       
         // Character selection initialization
         if (!PlayerPrefs.HasKey("selectedOption"))
         {

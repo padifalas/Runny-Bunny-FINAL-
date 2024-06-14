@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Start is called before the first frame update
     private void Start()
-    {
+    {        
         // Character selection initialization
         if (!PlayerPrefs.HasKey("selectedOption"))
         {
@@ -109,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
             grounded = true;
             jumpsRemaining = 2; // Reset jumps
         }
-    }
+    }   
 
     private void OnCollisionExit2D(Collision2D other)
     {

@@ -69,7 +69,7 @@ public class EagleAi : MonoBehaviour
                 playerRb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
             }
         }
-    }
+    }    
 
     private void OnDrawGizmos()
     {

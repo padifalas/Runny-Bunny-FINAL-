@@ -5,20 +5,15 @@ using UnityEngine;
 public class BlackJackBulletScript : MonoBehaviour
 {
     private GameObject player;
-    private GameObject player2;
-    private GameObject Stats;
+    private GameObject player2;    
     private Rigidbody2D rb1;
     private Rigidbody2D rb2;
     public float force;
-    private float timer;
-
-    public P1Stats stats;
+    private float timer;    
 
     // Start is called before the first frame update
     void Start()
-    {
-        GameObject.Find("Stats").GetComponent<P1Stats>();        
-
+    {    
         rb1 = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
 
@@ -49,30 +44,21 @@ public class BlackJackBulletScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
-
+   
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit Player 1");
 
-            Destroy(gameObject);
-
-            stats.Blackjack1();
+            Destroy(gameObject);           
         }
 
         if (other.gameObject.CompareTag("Player2"))
         {          
             Debug.Log("Hit Player 2");
 
-            Destroy(gameObject);
-
-            stats.Blackjack2();
+            Destroy(gameObject);          
         }
 
         if (other.gameObject.CompareTag("Ground"))
