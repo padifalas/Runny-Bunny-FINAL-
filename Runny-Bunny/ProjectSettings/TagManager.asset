@@ -9,6 +9,7 @@ TagManager:
   - KillCollider
   - Player1Name
   - Player2Name
+  - Human
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Human
   - 
   - 
   - 
@@ -51,4 +52,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3223603747
+    locked: 0
+  - name: Human
+    uniqueID: 3257058363
     locked: 0
