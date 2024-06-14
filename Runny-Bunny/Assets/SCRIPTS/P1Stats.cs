@@ -115,6 +115,28 @@ public class P1Stats : MonoBehaviour
     }
 
 
+    public void EnemyKill1()
+    {
+        Mental += 1;
+
+        MentalTxt.text = "Mental: " + Mental;
+
+        Mental2 -= 1;
+
+        MentalTxt2.text = "Mental: " + Mental2;
+    }
+    public void EnemyKill2()
+    {
+        Mental2 += 1;
+
+        MentalTxt2.text = "Mental: " + Mental2;
+
+        Mental -= 1;
+
+        MentalTxt.text = "Mental: " + Mental;
+    }
+
+
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
