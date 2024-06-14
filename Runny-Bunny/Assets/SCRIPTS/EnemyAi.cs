@@ -11,9 +11,13 @@ public class EnemyAI : MonoBehaviour
     private float distance;
     private float distance2;
 
+    public P1Stats stats;
+
     // Start is called before the first frame update
     private void Start()
     {
+        stats = GameObject.FindGameObjectWithTag("Stats").GetComponent<P1Stats>();
+
         // Initialize if needed
     }
 
@@ -40,6 +44,16 @@ public class EnemyAI : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            stats.GnomeAttack1();
+        }
+
+        if (collision.gameObject.CompareTag("Player2"))
+        {
+            stats.GnomeAttack2();
+        }
+
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Player2"))
         {
             Rigidbody2D playerRb = collision.gameObject.GetComponent<Rigidbody2D>();

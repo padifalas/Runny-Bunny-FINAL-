@@ -770,13 +770,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 4391292379767371408, guid: d77177383b458914f8227e5d99a92e49, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 2941046774349681013, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4391292379767371408, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4391292379767371408, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6674415443475031017, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_Pivot.x
@@ -872,19 +876,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8363819593425696669, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8363819593425696669, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8515718098847659471, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8515718098847659471, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4549,6 +4553,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
@@ -7227,6 +7235,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
@@ -8882,6 +8894,10 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
@@ -10793,6 +10809,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
@@ -12423,7 +12443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PointA: {fileID: 1597320218}
   PointB: {fileID: 1372718092}
-  Speed: 10
+  Speed: 11
   knockbackForce: 10
 --- !u!212 &1236256073
 SpriteRenderer:
@@ -12653,6 +12673,10 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
@@ -14535,6 +14559,10 @@ PrefabInstance:
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 503561291}
@@ -15088,19 +15116,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1294933909877167860, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1294933909877167860, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1636995250961330195, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1636995250961330195, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_Pivot.x
@@ -15198,13 +15226,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player1Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7821772710665920004, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
-      propertyPath: m_AnchorMax.x
+    - target: {fileID: 7659594692754063075, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7821772710665920004, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821772710665920004, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17468,6 +17500,10 @@ PrefabInstance:
       propertyPath: speed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 1173917618}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: player
       value: 

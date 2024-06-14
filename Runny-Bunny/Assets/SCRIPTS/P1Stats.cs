@@ -70,6 +70,19 @@ public class P1Stats : MonoBehaviour
         StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
+    public void GnomeAttack1()
+    {
+        Health -= 1;
+
+        HealthTxt.text = "Health: " + Health;
+    }
+    public void GnomeAttack2()
+    {
+        Health2 -= 1;
+
+        HealthTxt2.text = "Health: " + Health2;
+    }
+
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
