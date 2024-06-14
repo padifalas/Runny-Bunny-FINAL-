@@ -83,6 +83,19 @@ public class P1Stats : MonoBehaviour
         HealthTxt2.text = "Health: " + Health2;
     }
 
+    public void Blackjack1()
+    {
+        Health -= 1;
+
+        HealthTxt.text = "Health: " + Health;
+    }
+    public void Blackjack2()
+    {
+        Health2 -= 1;
+
+        HealthTxt2.text = "Health: " + Health2;
+    }
+
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
