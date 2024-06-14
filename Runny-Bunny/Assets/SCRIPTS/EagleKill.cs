@@ -1,31 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class EagleKill : MonoBehaviour
-{   
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(gameObject);
-        }
-
-        if (collision.gameObject.tag == "Player2")
-        {
-            Destroy(gameObject);
-        }
-    }
+{
+    public P1Stats stats;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        stats = GameObject.FindGameObjectWithTag("Stats").GetComponent<P1Stats>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+
+            stats.EnemyKill1();
+        }
+
+        if (collision.gameObject.tag == "Player2")
+        {
+            Destroy(gameObject);
+
+            stats.EnemyKill2();
+        }
+    }    
 }
