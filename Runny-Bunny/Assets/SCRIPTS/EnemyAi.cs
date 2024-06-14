@@ -13,6 +13,9 @@ public class EnemyAI : MonoBehaviour
 
     public P1Stats stats;
 
+    public PlayerMovement playerMovement;
+    public Player2Movement player2Movement;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -46,11 +49,35 @@ public class EnemyAI : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerMovement.KCounter = playerMovement.KTime;
+
+            if (collision.transform.position.x <= transform.position.x)
+            {
+                playerMovement.KnockRight = true;
+            }
+
+            if (collision.transform.position.x > transform.position.x)
+            {
+                playerMovement.KnockRight = false;
+            }
+
             stats.GnomeAttack1();
         }
 
         if (collision.gameObject.CompareTag("Player2"))
         {
+            player2Movement.KCounter = player2Movement.KTime;
+
+            if (collision.transform.position.x <= transform.position.x)
+            {
+                player2Movement.KnockRight = true;
+            }
+
+            if (collision.transform.position.x > transform.position.x)
+            {
+                player2Movement.KnockRight = false;
+            }
+
             stats.GnomeAttack2();
         }
 

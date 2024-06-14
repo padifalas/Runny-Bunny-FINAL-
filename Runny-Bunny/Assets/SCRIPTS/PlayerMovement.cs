@@ -19,6 +19,12 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight;
     private bool grounded;
 
+    public float KForce;
+    public float KCounter;
+    public float KTime;
+
+    public bool KnockRight;
+
     public float BounceUpForce = 15f;
 
     // Start is called before the first frame update
@@ -49,32 +55,51 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // Movement logic
-        float direction = Input.GetAxis("HorizontalP1"); // make player move left & right
-        rb.velocity = new Vector2(direction * speed, rb.velocity.y);
-
-        if (direction != 0)
+        if (KCounter <= 0)
         {
-            if ((direction > 0 && !isFacingRight) || (direction < 0 && isFacingRight))
+            // Movement logic
+            float direction = Input.GetAxis("HorizontalP1"); // make player move left & right
+            rb.velocity = new Vector2(direction * speed, rb.velocity.y);
+
+            if (direction != 0)
             {
-                Flip();
+                if ((direction > 0 && !isFacingRight) || (direction < 0 && isFacingRight))
+                {
+                    Flip();
+                }
+            }
+
+            if (direction > 0f)
+                transform.localScale = originalScale; // Use the original scale of the player
+            else if (direction < 0f)
+                transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+
+            if (Input.GetKeyDown(KeyCode.W) && jumpsRemaining > 0)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset Y velocity before jump
+                rb.AddForce(new Vector2(0f, jumpForce));
+                jumpsRemaining--;
+            }
+
+            // Set animator parameters
+            animator.SetBool("RUN", direction != 0);
+        }
+
+        else
+        {
+            if (KnockRight == true)
+            {
+                rb.velocity = new Vector2(-KForce, 6);
+            }
+
+            if (KnockRight == false)
+            {
+                rb.velocity = new Vector2(KForce, 6);
             }
         }
 
-        if (direction > 0f)
-            transform.localScale = originalScale; // Use the original scale of the player
-        else if (direction < 0f)
-            transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
-
-        if (Input.GetKeyDown(KeyCode.W) && jumpsRemaining > 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset Y velocity before jump
-            rb.AddForce(new Vector2(0f, jumpForce));
-            jumpsRemaining--;
-        }
-
-        // Set animator parameters
-        animator.SetBool("RUN", direction != 0);
+        KCounter -= Time.deltaTime;
+        
     }
 
     private void OnCollisionEnter2D(Collision2D other)

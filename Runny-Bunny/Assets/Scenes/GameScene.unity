@@ -4569,9 +4569,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (4)
@@ -4976,7 +4984,7 @@ Transform:
   m_GameObject: {fileID: 503561291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 135.3, y: 0.19, z: 0}
+  m_LocalPosition: {x: 407.2, y: 7.5, z: 0}
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5072,6 +5080,10 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
+  KForce: 15
+  KCounter: 0
+  KTime: 0.2
+  KnockRight: 0
   BounceUpForce: 15
 --- !u!95 &503561297
 Animator:
@@ -7251,9 +7263,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (7)
@@ -8911,9 +8931,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (2)
@@ -10825,9 +10853,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (3)
@@ -11027,7 +11063,7 @@ Transform:
   m_GameObject: {fileID: 1157572555}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 121.6, y: 6.2599945, z: 0}
+  m_LocalPosition: {x: 407.2, y: 6.2599945, z: 0}
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11051,6 +11087,10 @@ MonoBehaviour:
   selectedOption: 0
   speed: 8
   jumpForce: 900
+  KForce: 15
+  KCounter: 0
+  KTime: 0.2
+  KnockRight: 0
   BounceUpForce: 15
 --- !u!114 &1157572566
 MonoBehaviour:
@@ -12690,9 +12730,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (1)
@@ -14575,9 +14623,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (6)
@@ -17517,9 +17573,17 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 503561296}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: distanceBetween
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 5730425605182835974, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
+      propertyPath: player2Movement
+      value: 
+      objectReference: {fileID: 1157572565}
     - target: {fileID: 8875140562420080266, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_Name
       value: RUNNY BUNNY ENEMY_GNOME (5)
