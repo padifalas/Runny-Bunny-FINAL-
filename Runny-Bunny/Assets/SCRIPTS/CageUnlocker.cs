@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CageController : MonoBehaviour
 {
     private bool eKeyDown = false;
     private bool uKeyDown = false;
-    private float holdTimerE = 0f;
+    private float holdTimerQ = 0f;
     private float holdTimerU = 0f;
     public float holdDuration = 3f;
     public GameObject bunny1;
     public GameObject bunny2;
     public Collider2D cageCollider1; 
-    public Collider2D cageCollider2; 
+    public Collider2D cageCollider2;
+
+    public Slider Slider1;
+    public Slider Slider2;
+
+    private void Start()
+    {
+        Slider1.maxValue = holdDuration;
+        Slider2.maxValue = holdDuration;        
+    }
 
     void Update()
     {
@@ -20,20 +30,22 @@ public class CageController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q))
         {
             eKeyDown = true;
-            holdTimerE = 0f; 
+            holdTimerQ = 0f; 
         }
         
         if (Input.GetKeyUp(KeyCode.Q))
         {
             eKeyDown = false;
-            holdTimerE = 0f; 
+            holdTimerQ = 0f; 
         }
 
         if (eKeyDown)
         {
-            holdTimerE += Time.deltaTime;
+            Slider1.value = holdTimerQ;
 
-            if (holdTimerE >= holdDuration)
+            holdTimerQ += Time.deltaTime;
+
+            if (holdTimerQ >= holdDuration)
             {
                 DisableCageColliders(cageCollider1);
                 ReleaseBunny(bunny1);
@@ -56,6 +68,8 @@ public class CageController : MonoBehaviour
 
         if (uKeyDown)
         {
+            Slider2.value = holdTimerU;
+
             holdTimerU += Time.deltaTime;
 
             if (holdTimerU >= holdDuration)
