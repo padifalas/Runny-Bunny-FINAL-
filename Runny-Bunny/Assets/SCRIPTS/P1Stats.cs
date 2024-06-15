@@ -194,6 +194,23 @@ public class P1Stats : MonoBehaviour
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
 
+    public void PoisonM1()
+    {
+        Health -= 1;
+
+        H1.value = Health;
+
+        //StaminaTxt.text = "Stamina: " + Stamina;
+    }
+    public void PoisonM2()
+    {
+        Health2 -= 1;
+
+        H2.value = Health2;
+
+        //StaminaTxt2.text = "Stamina: " + Stamina2;
+    }
+
 
     /*public void OnTriggerEnter2D(Collider2D collision)
     {
