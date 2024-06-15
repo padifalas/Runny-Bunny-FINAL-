@@ -14,17 +14,17 @@ public class Player2Pickup : MonoBehaviour
     public GameObject CardPanel;
     public Button StamButton;
     public Button HealthButton;
-    public Button MentalButton;    
+    //public Button MentalButton;    
 
     public GameObject CardPanel2;
     public Button StamButton2;
     public Button HealthButton2;
-    public Button MentalButton2;
+    //public Button MentalButton2;
 
     public GameObject CardPanel3;
     public Button StamButton3;
     public Button HealthButton3;
-    public Button MentalButton3;
+    //public Button MentalButton3;
 
 
     public int i;
@@ -70,7 +70,7 @@ public class Player2Pickup : MonoBehaviour
             }
         }
     }
-    public void OnMentalClick()
+    /*public void OnMentalClick()
     {
         CardPanel.SetActive(false);
 
@@ -87,7 +87,7 @@ public class Player2Pickup : MonoBehaviour
                 break;
             }
         }
-    }
+    }*/
 
 
     public void OnStaminaClick2()
@@ -126,7 +126,7 @@ public class Player2Pickup : MonoBehaviour
             }
         }
     }
-    public void OnMentalClick2()
+    /*public void OnMentalClick2()
     {
         CardPanel2.SetActive(false);
 
@@ -143,7 +143,7 @@ public class Player2Pickup : MonoBehaviour
                 break;
             }
         }
-    }
+    }*/
 
 
     public void OnStaminaClick3()
@@ -182,7 +182,7 @@ public class Player2Pickup : MonoBehaviour
             }
         }
     }
-    public void OnMentalClick3()
+    /*public void OnMentalClick3()
     {
         CardPanel3.SetActive(false);
 
@@ -200,7 +200,7 @@ public class Player2Pickup : MonoBehaviour
             }
         }
     }
-
+    */
 
     // Update is called once per frame
     void Update()

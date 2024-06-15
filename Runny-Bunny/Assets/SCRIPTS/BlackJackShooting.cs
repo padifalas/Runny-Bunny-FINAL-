@@ -6,13 +6,15 @@ public class BlackJackShooting : MonoBehaviour
 {
     public GameObject bullet;
     public Transform bulletPos;
-    private GameObject player;
-    private GameObject player2;
+
+    public GameObject player1;
+    public GameObject player2;
+
     private float timer;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player1 = GameObject.FindGameObjectWithTag("Player");
 
         player2 = GameObject.FindGameObjectWithTag("Player2");
     }
@@ -20,9 +22,8 @@ public class BlackJackShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float distance = Vector2.Distance(transform.position, player.transform.position);
-        //Debug.Log(distance);
+        float distance = Vector2.Distance(transform.position, player1.transform.position);
+        //Debug.Log(distance2);
 
         if (distance < 10)
         {
@@ -48,9 +49,6 @@ public class BlackJackShooting : MonoBehaviour
                 shoot();
             }
         }
-
-
-
     }
 
     void shoot()

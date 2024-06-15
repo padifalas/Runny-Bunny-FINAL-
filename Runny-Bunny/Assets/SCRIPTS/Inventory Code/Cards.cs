@@ -24,10 +24,11 @@ public class Cards : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void OnMentalClick()
+    /*public void OnMentalClick()
     {
         Destroy(gameObject);
-    }
+    }*/
+
     // Update is called once per frame
     void Update()
     {
