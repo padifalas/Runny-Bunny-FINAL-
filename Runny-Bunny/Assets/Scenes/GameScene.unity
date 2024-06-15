@@ -3658,7 +3658,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnHealthClick2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4931,7 +4931,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnStaminaClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12885,7 +12885,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnStaminaClick2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13466,7 +13466,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnHealthClick3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14841,7 +14841,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnHealthClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24805,7 +24805,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1157572566}
         m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnStaminaClick3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
