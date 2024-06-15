@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class CageController : MonoBehaviour
 {
     private bool eKeyDown = false;
-    private bool uKeyDown = false;
-    private float holdTimerQ = 0f;
-    private float holdTimerU = 0f;
+    private bool ZeroKeyDown = false;
+    private float holdTimerE = 0f;
+    private float holdTimer0 = 0f;
     public float holdDuration = 3f;
     public GameObject bunny1;
     public GameObject bunny2;
@@ -27,25 +27,25 @@ public class CageController : MonoBehaviour
     void Update()
     {
         // Player 1 Key Handling
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             eKeyDown = true;
-            holdTimerQ = 0f; 
+            holdTimerE = 0f; 
         }
         
-        if (Input.GetKeyUp(KeyCode.Q))
+        if (Input.GetKeyUp(KeyCode.E))
         {
             eKeyDown = false;
-            holdTimerQ = 0f; 
+            holdTimerE = 0f; 
         }
 
         if (eKeyDown)
         {
-            Slider1.value = holdTimerQ;
+            Slider1.value = holdTimerE;
 
-            holdTimerQ += Time.deltaTime;
+            holdTimerE += Time.deltaTime;
 
-            if (holdTimerQ >= holdDuration)
+            if (holdTimerE >= holdDuration)
             {
                 DisableCageColliders(cageCollider1);
                 ReleaseBunny(bunny1);
@@ -54,25 +54,25 @@ public class CageController : MonoBehaviour
         }
 
         // Player 2 Key Handling
-        if (Input.GetKeyDown(KeyCode.U))
+        if (Input.GetKeyDown(KeyCode.Keypad0))
         {
-            uKeyDown = true;
-            holdTimerU = 0f; 
+            ZeroKeyDown = true;
+            holdTimer0 = 0f; 
         }
 
-        if (Input.GetKeyUp(KeyCode.U))
+        if (Input.GetKeyUp(KeyCode.Keypad0))
         {
-            uKeyDown = false;
-            holdTimerU = 0f; 
+            ZeroKeyDown = false;
+            holdTimer0 = 0f; 
         }
 
-        if (uKeyDown)
+        if (ZeroKeyDown)
         {
-            Slider2.value = holdTimerU;
+            Slider2.value = holdTimer0;
 
-            holdTimerU += Time.deltaTime;
+            holdTimer0 += Time.deltaTime;
 
-            if (holdTimerU >= holdDuration)
+            if (holdTimer0 >= holdDuration)
             {
                 DisableCageColliders(cageCollider2);
                 ReleaseBunny(bunny2);
