@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public int selectedOption = 0;
 
     // Movement and animation fields
-    public float speed = 8f;
+    public float speed = 5f;
     public float jumpForce = 600f; // Adjusted for better jump
     private Rigidbody2D rb;
     private Vector3 originalScale;
@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (StamSlider.value == 0)
             {
-                speed = 6f;
+                speed = 5f;
             }
 
             if (StamSlider.value == 10f)

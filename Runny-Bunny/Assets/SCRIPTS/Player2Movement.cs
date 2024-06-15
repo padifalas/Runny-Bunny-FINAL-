@@ -11,7 +11,7 @@ public class Player2Movement : MonoBehaviour
     public int selectedOption = 0;
 
     // Movement and animation fields
-    public float speed = 8f;
+    public float speed = 5f;
     public float jumpForce = 600f; // Adjusted for better jump
     private Rigidbody2D rb;
     private Vector3 originalScale;
