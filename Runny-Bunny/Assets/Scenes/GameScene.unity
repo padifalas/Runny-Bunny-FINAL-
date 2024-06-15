@@ -453,7 +453,7 @@ GameObject:
   - component: {fileID: 26115789}
   - component: {fileID: 26115788}
   m_Layer: 5
-  m_Name: Player 1 Text (11)
+  m_Name: Defeat Gnome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6220,7 +6220,7 @@ GameObject:
   - component: {fileID: 373205031}
   - component: {fileID: 373205030}
   m_Layer: 5
-  m_Name: Player 1 Text (7)
+  m_Name: Neighbour's Garden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6265,7 +6265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jump Down To The Other Side!
+  m_text: Climb Down Into The Neighbour's Garden
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
@@ -7996,7 +7996,7 @@ GameObject:
   - component: {fileID: 503305907}
   - component: {fileID: 503305906}
   m_Layer: 5
-  m_Name: Player 1 Text (10)
+  m_Name: Carrot Ahead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9308,7 +9308,7 @@ GameObject:
   - component: {fileID: 562666054}
   - component: {fileID: 562666053}
   m_Layer: 5
-  m_Name: Player 1 Text (6)
+  m_Name: Climbed wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24292,7 +24292,7 @@ GameObject:
   - component: {fileID: 1757417762}
   - component: {fileID: 1757417761}
   m_Layer: 5
-  m_Name: Player 1 Text (9)
+  m_Name: Avoid Gnome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24426,7 +24426,7 @@ GameObject:
   - component: {fileID: 1767501333}
   - component: {fileID: 1767501332}
   m_Layer: 5
-  m_Name: Player 1 Text (2)
+  m_Name: Eat Tomato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24448,7 +24448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.3, y: -281}
+  m_AnchoredPosition: {x: 56, y: -167}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767501332
@@ -24471,7 +24471,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eat The Tomatoes To Gain Stamina!
+  m_text: 'Eat The Tomatoes To Gain Stamina!
+
+    (INTERACTION BUTTON)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
@@ -24534,7 +24536,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -312.31763, w: 0}
+  m_margin: {x: 0, y: 0, z: -317.15048, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -27517,7 +27519,7 @@ GameObject:
   - component: {fileID: 1970141265}
   - component: {fileID: 1970141264}
   m_Layer: 5
-  m_Name: Player 1 Text (8)
+  m_Name: Avoid Eagle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28429,7 +28431,7 @@ GameObject:
   - component: {fileID: 1989679669}
   - component: {fileID: 1989679668}
   m_Layer: 5
-  m_Name: Player 1 Text (5)
+  m_Name: Jump Out Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28474,7 +28476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jump Out!
+  m_text: Jump Down!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
@@ -28647,7 +28649,7 @@ GameObject:
   - component: {fileID: 2000981526}
   - component: {fileID: 2000981525}
   m_Layer: 5
-  m_Name: Player 1 Text (12)
+  m_Name: Boosts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29353,7 +29355,7 @@ GameObject:
   - component: {fileID: 2063538454}
   - component: {fileID: 2063538453}
   m_Layer: 5
-  m_Name: Player 1 Text (3)
+  m_Name: Blackjack Thorns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30825,7 +30827,7 @@ GameObject:
   - component: {fileID: 2136027921}
   - component: {fileID: 2136027920}
   m_Layer: 5
-  m_Name: Player 1 Text (4)
+  m_Name: Climb To Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30870,7 +30872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Climb Up The Wind0w '
+  m_text: 'Climb Up To The Window '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
