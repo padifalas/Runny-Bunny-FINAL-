@@ -10,29 +10,36 @@ public class BlackJackBulletScript : MonoBehaviour
     private Rigidbody2D rb;   
 
     public float force;
-    private float timer;    
+    private float timer;
+
+    public bool IsPlayer1;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        player1 = GameObject.FindGameObjectWithTag("Player");
+        if (IsPlayer1 == true)
+        {
+            rb = GetComponent<Rigidbody2D>();
+            player1 = GameObject.FindGameObjectWithTag("Player");
 
-        Vector3 direction = player1.transform.position - transform.position;
-        rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
+            Vector3 direction = player1.transform.position - transform.position;
+            rb.velocity = new Vector2(direction.x, direction.y).normalized * force;
 
-        float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot + 100);
+            float rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, rot + 100);
+        }
 
+        else if (IsPlayer1 == false)
+        {
+            rb = GetComponent<Rigidbody2D>();
+            player2 = GameObject.FindGameObjectWithTag("Player2");
 
-        rb = GetComponent<Rigidbody2D>();
-        player2 = GameObject.FindGameObjectWithTag("Player2");
+            Vector3 direction2 = player2.transform.position - transform.position;
+            rb.velocity = new Vector2(direction2.x, direction2.y).normalized * force;
 
-        Vector3 direction2 = player2.transform.position - transform.position;
-        rb.velocity = new Vector2(direction2.x, direction2.y).normalized * force;
-
-        float rot2 = Mathf.Atan2(-direction2.y, -direction2.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, rot2 + 100);
+            float rot2 = Mathf.Atan2(-direction2.y, -direction2.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0, 0, rot2 + 100);
+        }              
     }
 
     // Update is called once per frame
