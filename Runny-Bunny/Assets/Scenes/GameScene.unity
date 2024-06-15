@@ -22833,7 +22833,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 54.3, y: -281}
+  m_AnchoredPosition: {x: 54.6, y: -229}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1767501332
@@ -22856,7 +22856,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Eat The Tomatoes To Gain Stamina!
+  m_text: 'Eat The Tomatoes To Gain Stamina!
+
+    (INTERACTABLE BUTTON)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
@@ -22919,7 +22921,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -312.31763, w: 0}
+  m_margin: {x: -89.45191, y: 0, z: -312.31763, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -26659,7 +26661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jump Out!
+  m_text: Jump Down!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
@@ -29055,7 +29057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Climb Up The Windw '
+  m_text: 'Climb Up The Window '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
