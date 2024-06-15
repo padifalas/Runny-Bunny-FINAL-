@@ -1129,6 +1129,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 1153756582579654513, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 1796329752080797192, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1909
@@ -4473,9 +4480,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnHealthClick2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealth2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4531,9 +4538,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
-        m_MethodName: OnHealthClick2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealthClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5681,8 +5688,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
         m_MethodName: OnStaminaClick
         m_Mode: 1
         m_Arguments:
@@ -5746,9 +5753,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnStaminaClick
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStamina2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8389,7 +8396,11 @@ Transform:
   m_GameObject: {fileID: 503561291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 0.45, y: -0.14, z: 0}
+=======
+  m_LocalPosition: {x: 20.7, y: 0.1, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8493,8 +8504,13 @@ MonoBehaviour:
   KnockRight: 0
   BounceUpForce: 15
   StamSlider: {fileID: 1517879195}
+<<<<<<< Updated upstream
   MentSlider: {fileID: 0}
   Camera: {fileID: 0}
+=======
+  MentSlider: {fileID: 301172415}
+  Camera: {fileID: 598663338}
+>>>>>>> Stashed changes
 --- !u!95 &503561297
 Animator:
   serializedVersion: 5
@@ -14170,9 +14186,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnStaminaClick2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStamina2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14228,9 +14244,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
-        m_MethodName: OnStaminaClick2
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStaminaClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14751,9 +14767,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnHealthClick3
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealth2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14809,9 +14825,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
-        m_MethodName: OnHealthClick3
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealthClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16223,8 +16239,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
         m_MethodName: OnHealthClick
         m_Mode: 1
         m_Arguments:
@@ -16288,9 +16304,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnHealthClick
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnHealth2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16854,7 +16870,11 @@ Transform:
   m_GameObject: {fileID: 1157572555}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -26.66, y: -133.13, z: 0}
+=======
+  m_LocalPosition: {x: 35.1, y: 7.699997, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16886,6 +16906,8 @@ MonoBehaviour:
   KnockRight: 0
   BounceUpForce: 15
   StamSlider: {fileID: 258503940}
+  MentSlider: {fileID: 1656007496}
+  Camera: {fileID: 1971117151}
 --- !u!114 &1157572566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23352,6 +23374,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 8f022b6034841b84d9cd9864f5ae12ff, type: 3}
+<<<<<<< Updated upstream
+=======
+    - target: {fileID: 3066030594649014887, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 3198799601873556932, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1909
@@ -27153,9 +27182,9 @@ MonoBehaviour:
   Player2Click:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157572566}
-        m_TargetAssemblyTypeName: Player2Pickup, Assembly-CSharp
-        m_MethodName: OnStaminaClick3
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStamina2Click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -27211,9 +27240,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503561300}
-        m_TargetAssemblyTypeName: Player1Pickup, Assembly-CSharp
-        m_MethodName: OnStaminaClick3
+      - m_Target: {fileID: 1173917618}
+        m_TargetAssemblyTypeName: P1Stats, Assembly-CSharp
+        m_MethodName: OnStaminaClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

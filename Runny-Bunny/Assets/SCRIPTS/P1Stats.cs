@@ -7,22 +7,22 @@ using UnityEngine.UI;
 public class P1Stats : MonoBehaviour
 {
     //public TextMeshProUGUI HealthTxt;
-    public int Health = 5;
+    public float Health = 5;
 
     //public TextMeshProUGUI StaminaTxt;
-    public int Stamina = 5;
+    public float Stamina = 5;
 
     //public TextMeshProUGUI MentalTxt;
-    public int Mental = 5;
+    public float Mental = 5;
 
     //public TextMeshProUGUI HealthTxt2;
-    public int Health2 = 5;
+    public float Health2 = 5;
 
     //public TextMeshProUGUI StaminaTxt2;
-    public int Stamina2 = 5;
+    public float Stamina2 = 1;
 
     //public TextMeshProUGUI MentalTxt2;
-    public int Mental2 = 5;   
+    public float Mental2 = 1;   
 
     public GameObject Player1;
     public GameObject Player2;
@@ -39,28 +39,44 @@ public class P1Stats : MonoBehaviour
     public Slider M1;
     public Slider M2;
 
+    public GameObject CardPanel1;
+    public GameObject CardPanel2;
+    public GameObject CardPanel3;
+
     public void OnHealthClick()
     {       
-        Health += 1;
+        Health += 2;
 
         H1.value = Health;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //HealthTxt.text = "Health: " + Health;
     }
     public void OnMentalClick()
     {
-        Mental += 3;
+        Mental += 1;
 
         M1.value = Mental;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //MentalTxt.text = "Mental: " + Health;
     }
 
     public void OnStaminaClick()
     {
-        Stamina += 2;
+        Stamina ++;
 
         S1.value = Stamina;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //StaminaTxt.text = "Stamina: " + Stamina;
     }
@@ -68,26 +84,38 @@ public class P1Stats : MonoBehaviour
 
     public void OnHealth2Click()
     {
-        Health2 += 1;
+        Health2 += 2;
 
         H2.value = Health2;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //HealthTxt2.text = "Health: " + Health2;
     }
     public void OnMental2Click()
     {
-        Mental2 += 3;
+        Mental2 += 1;
 
         M2.value = Mental2;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //MentalTxt2.text = "Mental: " + Health2;
     }
 
     public void OnStamina2Click()
     {
-        Stamina2 += 2;
+        Stamina2 ++;
 
         S2.value = Stamina2;
+
+        CardPanel1.SetActive(false);
+        CardPanel2.SetActive(false);
+        CardPanel3.SetActive(false);
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
@@ -113,7 +141,7 @@ public class P1Stats : MonoBehaviour
 
     public void Blackjack1()
     {
-        Health -= 1;
+        Health -= 0.5f;
 
         H1.value = Health;
 
@@ -121,7 +149,7 @@ public class P1Stats : MonoBehaviour
     }
     public void Blackjack2()
     {
-        Health2 -= 1;
+        Health2 -= 0.5f;
 
         H2.value = Health2;
 
@@ -196,7 +224,7 @@ public class P1Stats : MonoBehaviour
 
     public void PoisonM1()
     {
-        Health -= 1;
+        Health -= 2;
 
         H1.value = Health;
 
@@ -204,7 +232,7 @@ public class P1Stats : MonoBehaviour
     }
     public void PoisonM2()
     {
-        Health2 -= 1;
+        Health2 -= 2;
 
         H2.value = Health2;
 

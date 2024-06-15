@@ -29,6 +29,9 @@ public class Player2Movement : MonoBehaviour
     public float BounceUpForce = 15f;
 
     public Slider StamSlider;
+    public Slider MentSlider;
+
+    public Camera Camera;
 
     // Start is called before the first frame update
     private void Start()
@@ -104,17 +107,7 @@ public class Player2Movement : MonoBehaviour
             }
 
             // Set animator parameters
-            animator.SetBool("RUN", direction != 0);
-
-            if (StamSlider.value == 0)
-            {
-                speed = 6f;
-            }
-
-            if (StamSlider.value == 10)
-            {
-                speed = 13f;
-            }
+            animator.SetBool("RUN", direction != 0);          
         }
 
         else
@@ -132,6 +125,65 @@ public class Player2Movement : MonoBehaviour
 
         KCounter -= Time.deltaTime;
 
+
+        if (MentSlider.value > 9)
+        {
+            Camera.orthographicSize = 8f;
+        }
+
+        if (MentSlider.value <= 9)
+        {
+            Camera.orthographicSize = 7f;
+        }
+
+        if (MentSlider.value <= 7)
+        {
+            Camera.orthographicSize = 6f;
+        }
+
+        if (MentSlider.value <= 5)
+        {
+            Camera.orthographicSize = 5f;
+        }
+
+        if (MentSlider.value <= 3)
+        {
+            Camera.orthographicSize = 4f;
+        }
+
+
+        if (StamSlider.value > 9)
+        {
+            speed = 13;
+        }
+
+        if (StamSlider.value <= 9)
+        {
+            speed = 11;
+        }
+
+        if (StamSlider.value <= 7)
+        {
+            speed = 10;
+        }
+
+        if (StamSlider.value <= 5)
+        {
+            speed = 8;
+        }
+
+        if (StamSlider.value <= 3)
+        {
+            speed = 5;
+        }
+
+    }
+
+    public void OnStamCLick()
+    {
+        speed++;
+
+        StamSlider.value++;
     }
 
     private void OnCollisionEnter2D(Collision2D other)

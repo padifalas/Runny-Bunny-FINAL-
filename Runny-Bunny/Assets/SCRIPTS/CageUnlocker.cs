@@ -41,10 +41,15 @@ public class CageController : MonoBehaviour
 
         if (eKeyDown)
         {
+<<<<<<< Updated upstream
             Slider1.value = holdTimerQ;
 
             holdTimerQ += Time.deltaTime;
 
+=======
+            holdTimerQ += Time.deltaTime;
+
+>>>>>>> Stashed changes
             if (holdTimerQ >= holdDuration)
             {
                 DisableCageColliders(cageCollider1);
