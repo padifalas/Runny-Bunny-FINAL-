@@ -32,7 +32,7 @@ public class BlackJackShooting : MonoBehaviour
             if (timer > 1.5)
             {
                 timer = 0;
-                shoot();
+                shoot(true);
             }
         }
 
@@ -46,13 +46,15 @@ public class BlackJackShooting : MonoBehaviour
             if (timer > 1.5)
             {
                 timer = 0;
-                shoot();
+                shoot(false);
             }
         }
     }
 
-    void shoot()
+    void shoot(bool WhichPlayer)
     {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        var Bullet = Instantiate(bullet, bulletPos.position, Quaternion.identity);
+
+        Bullet.gameObject.GetComponent<BlackJackBulletScript>().IsPlayer1 = WhichPlayer;
     }
 }
