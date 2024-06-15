@@ -7,7 +7,7 @@ public class StartGame : MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadScene("Character Selection");
+        SceneManager.LoadScene("TESTCharacterSelect");
     }
 
     // Start is called before the first frame update
