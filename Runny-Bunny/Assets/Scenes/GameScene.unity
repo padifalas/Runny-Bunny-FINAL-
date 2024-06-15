@@ -6678,7 +6678,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -243.7
+      value: -244.33
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14996,7 +14996,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -219.2
+      value: -219.7
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20264,7 +20264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -219.5
+      value: -219.94
       objectReference: {fileID: 0}
     - target: {fileID: 4997112104348578750, guid: e4e68ac2292815847a7eed6be30142f5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29057,7 +29057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Climb Up The Windw '
+  m_text: 'Climb Up The Wind0w '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
   m_sharedMaterial: {fileID: 3189324957966665873, guid: 01fb473b072b2614e980caeb2cd6521b, type: 2}
