@@ -4344,7 +4344,7 @@ GameObject:
   - component: {fileID: 247628810}
   - component: {fileID: 247628811}
   m_Layer: 0
-  m_Name: Timer1 (1)
+  m_Name: Timer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4368,7 +4368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -762.9, y: -268}
+  m_AnchoredPosition: {x: -762.9, y: -20}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &247628811
@@ -8393,13 +8393,12 @@ Transform:
   m_GameObject: {fileID: 503561291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.7, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1268546933}
   - {fileID: 598663336}
-  - {fileID: 1512070616}
   m_Father: {fileID: 1177163525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &503561294
@@ -12651,7 +12650,7 @@ MonoBehaviour:
   cageCollider1: {fileID: 2112715282}
   cageCollider2: {fileID: 520355457}
   Slider1: {fileID: 1866686114}
-  Slider2: {fileID: 0}
+  Slider2: {fileID: 247628811}
 --- !u!4 &726426857
 Transform:
   m_ObjectHideFlags: 0
@@ -16858,14 +16857,13 @@ Transform:
   m_GameObject: {fileID: 1157572555}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.1, y: 7.699997, z: 0}
+  m_LocalPosition: {x: 0, y: 6.7, z: 0}
   m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1009571509}
   - {fileID: 1971117150}
-  - {fileID: 1504729563}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1177163525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1157572565
 MonoBehaviour:
@@ -17483,6 +17481,9 @@ MonoBehaviour:
   S2: {fileID: 258503940}
   M1: {fileID: 301172415}
   M2: {fileID: 1656007496}
+  CardPanel1: {fileID: 2130478713}
+  CardPanel2: {fileID: 163337601}
+  CardPanel3: {fileID: 450045833}
 --- !u!1 &1177163524
 GameObject:
   m_ObjectHideFlags: 0
@@ -17512,7 +17513,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1512070616}
+  - {fileID: 1504729563}
   - {fileID: 503561293}
+  - {fileID: 1157572564}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1206262103
@@ -22076,11 +22080,11 @@ Transform:
   m_GameObject: {fileID: 1504729562}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 6.7, z: 0}
+  m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1157572564}
+  m_Father: {fileID: 1177163525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1506450466
 PrefabInstance:
@@ -22213,11 +22217,11 @@ Transform:
   m_GameObject: {fileID: 1512070615}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.42898074, y: 0.07506363, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalScale: {x: 0.9324446, y: 0.9324446, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 503561293}
+  m_Father: {fileID: 1177163525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1517879195 stripped
 MonoBehaviour:
@@ -32005,7 +32009,6 @@ SceneRoots:
   - {fileID: 1595310309}
   - {fileID: 389781064}
   - {fileID: 1177163525}
-  - {fileID: 1157572564}
   - {fileID: 1014623998}
   - {fileID: 1498564983}
   - {fileID: 52848409}
