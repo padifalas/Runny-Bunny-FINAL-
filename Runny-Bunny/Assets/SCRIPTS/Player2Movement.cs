@@ -110,7 +110,7 @@ public class Player2Movement : MonoBehaviour
             }
 
             // Set animator parameters
-            animator.SetBool("RUN", direction != 0);          
+            //animator.SetBool("RUN", direction != 0);          
         }
 
         else

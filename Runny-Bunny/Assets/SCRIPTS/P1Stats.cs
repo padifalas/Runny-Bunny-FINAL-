@@ -43,6 +43,8 @@ public class P1Stats : MonoBehaviour
     public GameObject CardPanel2;
     public GameObject CardPanel3;
 
+    public float StaminaAdded;
+
     public void OnHealthClick()
     {       
         Health += 2;
@@ -70,7 +72,7 @@ public class P1Stats : MonoBehaviour
 
     public void OnStaminaClick()
     {
-        Stamina ++;
+        Stamina += 3;
 
         S1.value = Stamina;
 
@@ -108,14 +110,16 @@ public class P1Stats : MonoBehaviour
     }
 
     public void OnStamina2Click()
-    {
-        Stamina2 ++;
+    {            
+        Stamina2 += 3;
 
         S2.value = Stamina2;
 
+        Debug.Log(Stamina2);
+
         CardPanel1.SetActive(false);
         CardPanel2.SetActive(false);
-        CardPanel3.SetActive(false);
+        CardPanel3.SetActive(false);        
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
