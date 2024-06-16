@@ -360,7 +360,7 @@ MonoBehaviour:
     W
 
 
-    Interact: E
+    Interact: Q
 
 
     Use LEFT CLICK on Boosts (Recommended to use the Trackpad)'
@@ -644,11 +644,11 @@ MonoBehaviour:
     Jump: Double Tap Up Arrow
 
 
-    Interact: Keypad 0
+    Interact: Right Control
 
 
-    Use RIGHT CLICK on Boosts
-    (Recommended to use a Mouse)'
+    Use RIGHT CLICK
+    on Boosts (Recommended to use a Mouse)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

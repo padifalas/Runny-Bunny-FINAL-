@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class CageController : MonoBehaviour
 {
-    private bool eKeyDown = false;
-    private bool ZeroKeyDown = false;
-    private float holdTimerE = 0f;
-    private float holdTimer0 = 0f;
+    private bool qKeyDown = false;
+    private bool ctrlKeyDown = false;
+    private float holdTimerQ = 0f;
+    private float holdTimerCtrl = 0f;
     public float holdDuration = 3f;
     public GameObject bunny1;
     public GameObject bunny2;
@@ -27,25 +27,25 @@ public class CageController : MonoBehaviour
     void Update()
     {
         // Player 1 Key Handling
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            eKeyDown = true;
-            holdTimerE = 0f; 
+            qKeyDown = true;
+            holdTimerQ = 0f; 
         }
         
-        if (Input.GetKeyUp(KeyCode.E))
+        if (Input.GetKeyUp(KeyCode.Q))
         {
-            eKeyDown = false;
-            holdTimerE = 0f; 
+            qKeyDown = false;
+            holdTimerQ = 0f; 
         }
 
-        if (eKeyDown)
+        if (qKeyDown)
         {
-            Slider1.value = holdTimerE;
+            Slider1.value = holdTimerQ;
 
-            holdTimerE += Time.deltaTime;
+            holdTimerQ += Time.deltaTime;
 
-            if (holdTimerE >= holdDuration)
+            if (holdTimerQ >= holdDuration)
             {
                 DisableCageColliders(cageCollider1);
                 ReleaseBunny(bunny1);
@@ -54,25 +54,25 @@ public class CageController : MonoBehaviour
         }
 
         // Player 2 Key Handling
-        if (Input.GetKeyDown(KeyCode.Keypad0))
+        if (Input.GetKeyDown(KeyCode.RightControl))
         {
-            ZeroKeyDown = true;
-            holdTimer0 = 0f; 
+            ctrlKeyDown = true;
+            holdTimerCtrl = 0f; 
         }
 
-        if (Input.GetKeyUp(KeyCode.Keypad0))
+        if (Input.GetKeyUp(KeyCode.RightControl))
         {
-            ZeroKeyDown = false;
-            holdTimer0 = 0f; 
+            ctrlKeyDown = false;
+            holdTimerCtrl = 0f; 
         }
 
-        if (ZeroKeyDown)
+        if (ctrlKeyDown)
         {
-            Slider2.value = holdTimer0;
+            Slider2.value = holdTimerCtrl;
 
-            holdTimer0 += Time.deltaTime;
+            holdTimerCtrl += Time.deltaTime;
 
-            if (holdTimer0 >= holdDuration)
+            if (holdTimerCtrl >= holdDuration)
             {
                 DisableCageColliders(cageCollider2);
                 ReleaseBunny(bunny2);
