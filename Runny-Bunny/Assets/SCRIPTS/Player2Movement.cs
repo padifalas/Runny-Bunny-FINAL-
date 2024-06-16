@@ -9,6 +9,7 @@ public class Player2Movement : MonoBehaviour
     public CharacterDatabase characterDB;
     public SpriteRenderer artworkSprite;
     public int selectedOption = 0;
+    private Animator anim;
 
     // Movement and animation fields
     public float speed = 8f;
@@ -29,6 +30,13 @@ public class Player2Movement : MonoBehaviour
     public float BounceUpForce = 15f;
 
     public Slider StamSlider;
+
+
+    private void Awake()
+    {
+        //ref to anim
+        anim = GetComponent<Animator>();
+    }
 
     // Start is called before the first frame update
     private void Start()
@@ -131,6 +139,8 @@ public class Player2Movement : MonoBehaviour
         }
 
         KCounter -= Time.deltaTime;
+
+        anim.SetBool("run", Input.GetAxis("HorizontalP2") != 0);
 
     }
 
