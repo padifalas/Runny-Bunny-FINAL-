@@ -180,8 +180,9 @@ public class Player2Movement : MonoBehaviour
         if (StamSlider.value <= 3)
         {
             speed = 5;
-        }
 
+            Debug.Log(speed);
+        }
     }
 
     public void OnStamCLick()

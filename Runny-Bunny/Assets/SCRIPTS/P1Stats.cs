@@ -10,7 +10,7 @@ public class P1Stats : MonoBehaviour
     public float Health = 5;
 
     //public TextMeshProUGUI StaminaTxt;
-    public float Stamina = 5;
+    public float Stamina = 1;
 
     //public TextMeshProUGUI MentalTxt;
     public float Mental = 5;
@@ -264,7 +264,8 @@ public class P1Stats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Stamina = 1f;
+        Stamina2 = 1f;
     }
 
     // Update is called once per frame

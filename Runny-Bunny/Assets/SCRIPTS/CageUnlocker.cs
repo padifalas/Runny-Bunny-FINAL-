@@ -18,6 +18,9 @@ public class CageController : MonoBehaviour
     public Slider Slider1;
     public Slider Slider2;
 
+    public AudioSource AudioSourceUnlocking;
+    public AudioSource AudioSourceUnlocked;   
+
     private void Start()
     {
         Slider1.maxValue = holdDuration;
@@ -46,10 +49,10 @@ public class CageController : MonoBehaviour
             holdTimerQ += Time.deltaTime;
 
             if (holdTimerQ >= holdDuration)
-            {
+            {  
                 DisableCageColliders(cageCollider1);
                 ReleaseBunny(bunny1);
-                Debug.Log("Bunny1 can move!!");
+                Debug.Log("Bunny1 can move!!");                
             }
         }
 
@@ -72,11 +75,18 @@ public class CageController : MonoBehaviour
 
             holdTimerCtrl += Time.deltaTime;
 
+            if (holdTimerCtrl < holdDuration)
+            {
+                //AudioSourceUnlocking.Play();
+            }
+
             if (holdTimerCtrl >= holdDuration)
             {
+                //AudioSourceUnlocking.Stop();
+
                 DisableCageColliders(cageCollider2);
                 ReleaseBunny(bunny2);
-                Debug.Log("Bunny2 can move!!");
+                Debug.Log("Bunny2 can move!!");                
             }
         }
     }
