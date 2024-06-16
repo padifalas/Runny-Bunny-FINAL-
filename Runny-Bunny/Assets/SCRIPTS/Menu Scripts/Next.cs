@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Next : MonoBehaviour
 {    public void OnClick()
     {
-        SceneManager.LoadScene("TESTCharacterSelect");
+        SceneManager.LoadScene("InstructionsMenu2");
     }
 
     // Start is called before the first frame update

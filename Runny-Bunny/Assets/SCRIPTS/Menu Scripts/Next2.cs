@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Instructions : MonoBehaviour
+public class Next2 : MonoBehaviour
 {
     public void OnClick()
     {
-        SceneManager.LoadScene("InstructionsMenu");
+        SceneManager.LoadScene("TESTCharacterSelect");
     }
 
     // Start is called before the first frame update
