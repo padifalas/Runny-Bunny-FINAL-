@@ -826,6 +826,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1026445535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 79000c6dab88acc44bfa82405fcdb4fd, type: 3}
+  m_PrefabInstance: {fileID: 700652950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1036128998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1088,7 @@ MonoBehaviour:
   player2ConfirmButton: {fileID: 1147657333}
   startButton: {fileID: 1115626753}
   player1BunnyCharacterPrefab: {fileID: 1787769693}
-  player2BunnyCharacterPrefab: {fileID: 0}
+  player2BunnyCharacterPrefab: {fileID: 1026445535}
 --- !u!1 &1115626751
 GameObject:
   m_ObjectHideFlags: 0
