@@ -19,10 +19,16 @@ public class CageController : MonoBehaviour
     public Slider Slider2;
 
     public AudioSource AudioSourceUnlocking;
-    public AudioSource AudioSourceUnlocked;   
+    public AudioSource AudioSourceUnlocked;
+
+    private bool Cage1Open;
+    private bool Cage2Open;
 
     private void Start()
     {
+        Cage1Open = false;
+        Cage2Open = false;
+
         Slider1.maxValue = holdDuration;
         Slider2.maxValue = holdDuration;        
     }
@@ -30,65 +36,80 @@ public class CageController : MonoBehaviour
     void Update()
     {
         // Player 1 Key Handling
-        if (Input.GetKeyDown(KeyCode.Q))
+        if(Cage1Open == false)
         {
-            qKeyDown = true;
-            holdTimerQ = 0f; 
-        }
-        
-        if (Input.GetKeyUp(KeyCode.Q))
-        {
-            qKeyDown = false;
-            holdTimerQ = 0f; 
-        }
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                qKeyDown = true;
+                holdTimerQ = 0f;
 
-        if (qKeyDown)
-        {
-            Slider1.value = holdTimerQ;
-
-            holdTimerQ += Time.deltaTime;
-
-            if (holdTimerQ >= holdDuration)
-            {  
-                DisableCageColliders(cageCollider1);
-                ReleaseBunny(bunny1);
-                Debug.Log("Bunny1 can move!!");                
+                AudioSourceUnlocking.Play();
             }
-        }
+
+            if (Input.GetKeyUp(KeyCode.Q))
+            {
+                qKeyDown = false;
+                holdTimerQ = 0f;
+
+                AudioSourceUnlocking.Stop();
+            }
+
+            if (qKeyDown)
+            {
+                Slider1.value = holdTimerQ;
+
+                holdTimerQ += Time.deltaTime;
+
+                if (holdTimerQ >= holdDuration)
+                {
+                    Cage1Open = true;
+
+                    AudioSourceUnlocked.Play();
+
+                    DisableCageColliders(cageCollider1);
+                    ReleaseBunny(bunny1);
+                    Debug.Log("Bunny1 can move!!");
+                }
+            }
+        }        
 
         // Player 2 Key Handling
-        if (Input.GetKeyDown(KeyCode.RightControl))
+        if (Cage2Open == false)
         {
-            ctrlKeyDown = true;
-            holdTimerCtrl = 0f; 
-        }
-
-        if (Input.GetKeyUp(KeyCode.RightControl))
-        {
-            ctrlKeyDown = false;
-            holdTimerCtrl = 0f; 
-        }
-
-        if (ctrlKeyDown)
-        {
-            Slider2.value = holdTimerCtrl;
-
-            holdTimerCtrl += Time.deltaTime;
-
-            if (holdTimerCtrl < holdDuration)
+            if (Input.GetKeyDown(KeyCode.RightControl))
             {
-                //AudioSourceUnlocking.Play();
+                ctrlKeyDown = true;
+                holdTimerCtrl = 0f;
+
+                AudioSourceUnlocking.Play();
             }
 
-            if (holdTimerCtrl >= holdDuration)
+            if (Input.GetKeyUp(KeyCode.RightControl))
             {
-                //AudioSourceUnlocking.Stop();
+                ctrlKeyDown = false;
+                holdTimerCtrl = 0f;
 
-                DisableCageColliders(cageCollider2);
-                ReleaseBunny(bunny2);
-                Debug.Log("Bunny2 can move!!");                
+                AudioSourceUnlocking.Stop();
             }
-        }
+
+            if (ctrlKeyDown)
+            {
+                Slider2.value = holdTimerCtrl;
+
+                holdTimerCtrl += Time.deltaTime;
+
+                if (holdTimerCtrl >= holdDuration)
+                {
+                    Cage2Open = true;
+
+                    AudioSourceUnlocked.Play();
+
+                    DisableCageColliders(cageCollider2);
+                    ReleaseBunny(bunny2);
+                    Debug.Log("Bunny2 can move!!");
+                }
+            }
+        }        
     }
 
     void DisableCageColliders(Collider2D cageCollider)
