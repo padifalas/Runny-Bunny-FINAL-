@@ -17,6 +17,7 @@ public class Player2Movement : MonoBehaviour
     private Vector3 originalScale;
     private int jumpsRemaining = 2; // No. of jumps allowed
     private Animator animator;
+    private Animator anim;
     private bool isFacingRight;
     private bool grounded; 
 
@@ -53,6 +54,8 @@ public class Player2Movement : MonoBehaviour
         animator = GetComponent<Animator>(); // Reference to animator from object
         DontDestroyOnLoad(gameObject);
         originalScale = transform.localScale; // Store the original scale
+
+        anim = GetComponent<Animator>();
 
         // Higher gravity scale for faster falling
         rb.gravityScale = 2f;
@@ -124,6 +127,8 @@ public class Player2Movement : MonoBehaviour
         }
 
         KCounter -= Time.deltaTime;
+
+        anim.SetBool("run", Input.GetAxis("HorizontalP2") != 0);
 
 
         if (MentSlider.value > 9)
