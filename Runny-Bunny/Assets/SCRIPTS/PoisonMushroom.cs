@@ -10,6 +10,10 @@ public class PoisonMushroom : MonoBehaviour
 
     bool StatChange2;
 
+    public AudioSource Audio;
+
+    public AudioSource AudioHurt;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +65,9 @@ public class PoisonMushroom : MonoBehaviour
 
                 stats.PoisonM2();
 
+                Audio.Play();
+                AudioHurt.Play();
+
                 Destroy(gameObject);
             }
         }
@@ -72,6 +79,9 @@ public class PoisonMushroom : MonoBehaviour
                 Debug.Log("OOPS");
 
                 stats.PoisonM1();
+
+                Audio.Play();
+                AudioHurt.Play();
 
                 Destroy(gameObject);
             }

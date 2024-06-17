@@ -10,6 +10,8 @@ public class Tomato : MonoBehaviour
 
     bool StatChange2;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +63,8 @@ public class Tomato : MonoBehaviour
 
                 stats.Tomato2();
 
+                Audio.Play();
+
                 Destroy(gameObject);
             }
         }
@@ -72,6 +76,8 @@ public class Tomato : MonoBehaviour
                 Debug.Log("MUNCH");
 
                 stats.Tomato1();
+
+                Audio.Play();
 
                 Destroy(gameObject);
             }

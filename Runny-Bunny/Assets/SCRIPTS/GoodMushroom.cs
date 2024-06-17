@@ -10,6 +10,8 @@ public class GoodMushroom : MonoBehaviour
 
     bool StatChange2;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +61,8 @@ public class GoodMushroom : MonoBehaviour
             {
                 Debug.Log("CRUNCH");
 
+                Audio.Play();
+
                 //stats.PoisonM2();
 
                 Destroy(gameObject);
@@ -70,6 +74,8 @@ public class GoodMushroom : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Q))
             {
                 Debug.Log("CRUNCH");
+
+                Audio.Play();
 
                 //stats.PoisonM1();
 
