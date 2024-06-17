@@ -135,27 +135,27 @@ public class Player2Movement : MonoBehaviour
         anim.SetBool("run", Input.GetAxis("HorizontalP2") != 0);
 
 
-        if (MentSlider.value > 9)
+        if (MentSlider.value > 5)
         {
             Camera.orthographicSize = 8f;
         }
 
-        if (MentSlider.value <= 9)
+        if (MentSlider.value <= 4)
         {
             Camera.orthographicSize = 7f;
         }
 
-        if (MentSlider.value <= 7)
+        if (MentSlider.value <= 3)
         {
             Camera.orthographicSize = 6f;
         }
 
-        if (MentSlider.value <= 5)
+        if (MentSlider.value <= 2)
         {
             Camera.orthographicSize = 5f;
         }
 
-        if (MentSlider.value <= 3)
+        if (MentSlider.value <= 1)
         {
             Camera.orthographicSize = 4f;
         }

@@ -11,6 +11,7 @@ public class BlackJackShooting : MonoBehaviour
     public GameObject player2;
 
     private float timer;
+
     // Start is called before the first frame update
     void Start()
     {

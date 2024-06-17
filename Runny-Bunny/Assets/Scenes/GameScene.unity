@@ -1149,6 +1149,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -494
       objectReference: {fileID: 0}
+    - target: {fileID: 2481464314273589768, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2481464314273589768, guid: d77177383b458914f8227e5d99a92e49, type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2804643110425435437, guid: d77177383b458914f8227e5d99a92e49, type: 3}
       propertyPath: m_SizeDelta.x
       value: 57.6693
@@ -2321,7 +2329,7 @@ GameObject:
   - component: {fileID: 97207773}
   m_Layer: 0
   m_Name: Regular Mushroom
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2466,7 +2474,7 @@ GameObject:
   - component: {fileID: 98917729}
   m_Layer: 0
   m_Name: Regular Mushroom (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,7 +3322,7 @@ GameObject:
   - component: {fileID: 145894055}
   m_Layer: 0
   m_Name: Regular Mushroom (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,7 +3467,7 @@ GameObject:
   - component: {fileID: 146578542}
   m_Layer: 0
   m_Name: Regular Mushroom (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4306,7 +4314,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9223dbfb154639449b473462a7e20b73, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4527,7 +4535,7 @@ GameObject:
   - component: {fileID: 228120272}
   m_Layer: 0
   m_Name: Poison Mushroom (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,7 +5015,7 @@ GameObject:
   - component: {fileID: 268133691}
   m_Layer: 0
   m_Name: Regular Mushroom (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5152,7 +5160,7 @@ GameObject:
   - component: {fileID: 278228900}
   m_Layer: 0
   m_Name: Regular Mushroom (11)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6126,7 +6134,7 @@ GameObject:
   - component: {fileID: 328026631}
   m_Layer: 0
   m_Name: Regular Mushroom (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6477,7 +6485,7 @@ GameObject:
   - component: {fileID: 350626524}
   m_Layer: 0
   m_Name: Poison Mushroom (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6940,7 +6948,7 @@ GameObject:
   - component: {fileID: 383274875}
   m_Layer: 0
   m_Name: Regular Mushroom (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8501,7 +8509,7 @@ GameObject:
   - component: {fileID: 496867452}
   m_Layer: 0
   m_Name: Regular Mushroom (12)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11460,7 +11468,7 @@ GameObject:
   - component: {fileID: 655524171}
   m_Layer: 0
   m_Name: Regular Mushroom (14)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11605,7 +11613,7 @@ GameObject:
   - component: {fileID: 667808200}
   m_Layer: 0
   m_Name: Poison Mushroom (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11827,7 +11835,7 @@ GameObject:
   - component: {fileID: 677683147}
   m_Layer: 0
   m_Name: Poison Mushroom (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13675,7 +13683,7 @@ GameObject:
   - component: {fileID: 742160202}
   m_Layer: 0
   m_Name: Poison Mushroom (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17457,7 +17465,7 @@ GameObject:
   - component: {fileID: 1154911169}
   m_Layer: 0
   m_Name: Regular Mushroom (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19687,7 +19695,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d6ba73427a73d20438ae11161ffdafba, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -20193,7 +20201,7 @@ GameObject:
   - component: {fileID: 1310792645}
   m_Layer: 0
   m_Name: Regular Mushroom (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20676,7 +20684,7 @@ GameObject:
   - component: {fileID: 1328970054}
   m_Layer: 0
   m_Name: Regular Mushroom (13)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21167,7 +21175,7 @@ GameObject:
   - component: {fileID: 1372397688}
   m_Layer: 0
   m_Name: Regular Mushroom (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22143,6 +22151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardPanel: {fileID: 163337601}
+  Audio: {fileID: 1498564984}
 --- !u!58 &1434243738
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22633,7 +22642,7 @@ GameObject:
   - component: {fileID: 1487217264}
   m_Layer: 0
   m_Name: Regular Mushroom (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23183,6 +23192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1498564983}
+  - component: {fileID: 1498564984}
   m_Layer: 0
   m_Name: Card Triggers
   m_TagString: Untagged
@@ -23208,6 +23218,102 @@ Transform:
   - {fileID: 2083081578}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1498564984
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498564982}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1504729562
 GameObject:
   m_ObjectHideFlags: 0
@@ -23509,7 +23615,7 @@ GameObject:
   - component: {fileID: 1561556223}
   m_Layer: 0
   m_Name: Poison Mushroom (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23815,7 +23921,7 @@ GameObject:
   - component: {fileID: 1582135939}
   m_Layer: 0
   m_Name: Poison Mushroom
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24628,6 +24734,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 7274339802591709746, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274339802591709746, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
+      propertyPath: m_MaxValue
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7469118243402647386, guid: 06abcd819a599f749ad1ee0e020b02b4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -25126,7 +25240,7 @@ GameObject:
   - component: {fileID: 1638623597}
   m_Layer: 0
   m_Name: Poison Mushroom (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26124,6 +26238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardPanel: {fileID: 2130478713}
+  Audio: {fileID: 1498564984}
 --- !u!1 &1745257047
 GameObject:
   m_ObjectHideFlags: 0
@@ -31833,7 +31948,7 @@ GameObject:
   - component: {fileID: 2073154150}
   m_Layer: 0
   m_Name: Regular Mushroom (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32332,6 +32447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CardPanel: {fileID: 450045833}
+  Audio: {fileID: 1498564984}
 --- !u!58 &2083081580
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32961,7 +33077,7 @@ GameObject:
   - component: {fileID: 2117894396}
   m_Layer: 0
   m_Name: Regular Mushroom (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

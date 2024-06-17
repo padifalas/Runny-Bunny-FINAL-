@@ -13,7 +13,7 @@ public class P1Stats : MonoBehaviour
     public float Stamina = 1;
 
     //public TextMeshProUGUI MentalTxt;
-    public float Mental = 5;
+    public float Mental = 1;
 
     //public TextMeshProUGUI HealthTxt2;
     public float Health2 = 5;
@@ -221,10 +221,6 @@ public class P1Stats : MonoBehaviour
 
         //MentalTxt.text = "Mental: " + Mental;
 
-        Mental2 -= 1;
-
-        M2.value = Mental2;
-
         StatAudio.clip = KillSound;
         StatAudio.Play();
 
@@ -236,11 +232,7 @@ public class P1Stats : MonoBehaviour
 
         M2.value = Mental2;
 
-        //MentalTxt2.text = "Mental: " + Mental2;
-
-        Mental -= 1;
-
-        M1.value = Mental;
+        //MentalTxt2.text = "Mental: " + Mental2;        
 
         StatAudio.clip = KillSound;
         StatAudio.Play();
@@ -318,6 +310,9 @@ public class P1Stats : MonoBehaviour
     {
         Stamina = 1f;
         Stamina2 = 1f;
+
+        Mental = 1f;
+        Mental2 = 1f;
     }
 
     // Update is called once per frame

@@ -14,6 +14,8 @@ public class BlackJackBulletScript : MonoBehaviour
 
     public bool IsPlayer1;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,9 @@ public class BlackJackBulletScript : MonoBehaviour
 
             float rot2 = Mathf.Atan2(-direction2.y, -direction2.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, rot2 + 100);
-        }      
+        }       
+        
+        Audio.Play();
     }
 
     // Update is called once per frame

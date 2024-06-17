@@ -10,6 +10,8 @@ public class CardTrigger : MonoBehaviour
 
     bool P2Enter;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,8 @@ public class CardTrigger : MonoBehaviour
                 P1Enter = true;
 
                 CardPanel.SetActive(true);
+
+                Audio.Play();
             }
 
             else
@@ -44,6 +48,8 @@ public class CardTrigger : MonoBehaviour
                 P2Enter = true;
 
                 CardPanel.SetActive(true);
+
+                Audio.Play();
             }
 
             else
