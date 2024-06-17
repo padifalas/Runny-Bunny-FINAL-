@@ -15,6 +15,9 @@ public class EagleAi : MonoBehaviour
     private Transform CurrentPoint;
     private bool facingRight = false; // Initially facing left since we need to switch directions
 
+    public PlayerMovement playerMovement;
+    public Player2Movement player2Movement;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -66,11 +69,35 @@ public class EagleAi : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerMovement.KCounter = playerMovement.KTime;
+
+            if (collision.transform.position.x <= transform.position.x)
+            {
+                playerMovement.KnockRight = true;
+            }
+
+            if (collision.transform.position.x > transform.position.x)
+            {
+                playerMovement.KnockRight = false;
+            }
+
             stats.EagleAttack1();
         }
 
         if (collision.gameObject.CompareTag("Player2"))
         {
+            player2Movement.KCounter = player2Movement.KTime;
+
+            if (collision.transform.position.x <= transform.position.x)
+            {
+                player2Movement.KnockRight = true;
+            }
+
+            if (collision.transform.position.x > transform.position.x)
+            {
+                player2Movement.KnockRight = false;
+            }
+
             stats.EagleAttack2();
         }
     }    

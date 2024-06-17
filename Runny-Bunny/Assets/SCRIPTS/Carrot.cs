@@ -12,6 +12,8 @@ public class Carrot : MonoBehaviour
 
     bool P2Won;
 
+    public AudioSource Audio;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,8 @@ public class Carrot : MonoBehaviour
                     Player1();
 
                     P1Won = true;
+
+                    Audio.Play();
                 }
 
                 else
@@ -80,6 +84,8 @@ public class Carrot : MonoBehaviour
                     Player2();
 
                     P2Won = true;
+
+                    Audio.Play();
                 }
 
                 else

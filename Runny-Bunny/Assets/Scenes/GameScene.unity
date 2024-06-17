@@ -2921,6 +2921,8 @@ MonoBehaviour:
   Speed: 3
   knockbackForce: 10
   stats: {fileID: 0}
+  playerMovement: {fileID: 0}
+  player2Movement: {fileID: 0}
 --- !u!60 &121985428
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4313,7 +4315,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9223dbfb154639449b473462a7e20b73, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6d9c9be0518876b42b2f08fceb0b6956, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4568,8 +4570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &228120273
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6518,8 +6519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &350626525
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11646,8 +11646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &667808201
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11868,8 +11867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &677683148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13009,6 +13007,8 @@ MonoBehaviour:
   Speed: 2
   knockbackForce: 10
   stats: {fileID: 1173917618}
+  playerMovement: {fileID: 503561296}
+  player2Movement: {fileID: 1157572565}
 --- !u!212 &719636851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13716,8 +13716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &742160203
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14476,6 +14475,7 @@ GameObject:
   - component: {fileID: 882456184}
   - component: {fileID: 882456183}
   - component: {fileID: 882456186}
+  - component: {fileID: 882456187}
   m_Layer: 0
   m_Name: WinCarrot
   m_TagString: Untagged
@@ -14667,6 +14667,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P1Win: {fileID: 1524115626}
   P2Win: {fileID: 921308086}
+  Audio: {fileID: 882456187}
+--- !u!82 &882456187
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882456182}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0159e613f0694ac419815663a21e1004, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &900857750
 GameObject:
   m_ObjectHideFlags: 0
@@ -18194,6 +18291,8 @@ MonoBehaviour:
   Speed: 5
   knockbackForce: 10
   stats: {fileID: 1173917618}
+  playerMovement: {fileID: 503561296}
+  player2Movement: {fileID: 1157572565}
 --- !u!212 &1169843915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18321,7 +18420,6 @@ MonoBehaviour:
   EAttackSound: {fileID: 8300000, guid: d6ba73427a73d20438ae11161ffdafba, type: 3}
   GAttackSound: {fileID: 8300000, guid: d6ba73427a73d20438ae11161ffdafba, type: 3}
   KillSound: {fileID: 8300000, guid: 72c3b97dcf4b8994fb71522d2a6b75f9, type: 3}
-  EatSound: {fileID: 8300000, guid: 9223dbfb154639449b473462a7e20b73, type: 3}
   RestartSound: {fileID: 8300000, guid: f6f54a3aebe2c6346b0f437984205e18, type: 3}
 --- !u!82 &1173917619
 AudioSource:
@@ -19180,6 +19278,8 @@ MonoBehaviour:
   Speed: 11
   knockbackForce: 10
   stats: {fileID: 1173917618}
+  playerMovement: {fileID: 503561296}
+  player2Movement: {fileID: 1157572565}
 --- !u!212 &1236256073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19694,7 +19794,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d6ba73427a73d20438ae11161ffdafba, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 78ad99fd0a0a5144280b07bbdba84815, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -23131,6 +23231,8 @@ MonoBehaviour:
   Speed: 3
   knockbackForce: 10
   stats: {fileID: 1173917618}
+  playerMovement: {fileID: 503561296}
+  player2Movement: {fileID: 1157572565}
 --- !u!212 &1488063200
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23648,8 +23750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &1561556224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23954,8 +24055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &1582135940
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25273,8 +25373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1173917618}
-  Audio: {fileID: 211953653}
-  AudioHurt: {fileID: 1261934626}
+  Audio: {fileID: 1261934626}
 --- !u!61 &1638623598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29368,6 +29467,8 @@ MonoBehaviour:
   Speed: 4
   knockbackForce: 10
   stats: {fileID: 1173917618}
+  playerMovement: {fileID: 503561296}
+  player2Movement: {fileID: 1157572565}
 --- !u!212 &1912686260
 SpriteRenderer:
   m_ObjectHideFlags: 0

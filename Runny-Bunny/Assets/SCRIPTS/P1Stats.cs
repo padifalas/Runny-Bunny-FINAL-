@@ -47,7 +47,7 @@ public class P1Stats : MonoBehaviour
 
     public AudioSource StatAudio;
 
-    public AudioClip BoostSound, HurtSound, EAttackSound, GAttackSound, KillSound, EatSound, RestartSound;
+    public AudioClip BoostSound, HurtSound, EAttackSound, GAttackSound, KillSound, RestartSound;
 
     public void OnHealthClick()
     {       
@@ -247,9 +247,6 @@ public class P1Stats : MonoBehaviour
 
         S1.value = Stamina;
 
-        StatAudio.clip = EatSound;
-        StatAudio.Play();
-
         //StaminaTxt.text = "Stamina: " + Stamina;
     }
     public void Tomato2()
@@ -257,9 +254,6 @@ public class P1Stats : MonoBehaviour
         Stamina2 += 1;
 
         S2.value = Stamina2;
-
-        StatAudio.clip = EatSound;
-        StatAudio.Play();
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
@@ -270,9 +264,6 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
-        StatAudio.clip = EatSound;
-        StatAudio.Play();
-
         //StaminaTxt.text = "Stamina: " + Stamina;
     }
     public void PoisonM2()
@@ -280,9 +271,6 @@ public class P1Stats : MonoBehaviour
         Health2 -= 2;
 
         H2.value = Health2;
-
-        StatAudio.clip = EatSound;
-        StatAudio.Play();
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
