@@ -34,6 +34,8 @@ public class Player2Movement : MonoBehaviour
 
     public Camera Camera;
 
+    public AudioSource AudioJump;
+
     // Start is called before the first frame update
     private void Start()
     {       
@@ -104,6 +106,8 @@ public class Player2Movement : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.UpArrow) && jumpsRemaining > 0)
             {
+                AudioJump.Play();
+
                 rb.velocity = new Vector2(rb.velocity.x, 0f); // Reset Y velocity before jump
                 rb.AddForce(new Vector2(0f, jumpForce));
                 jumpsRemaining--;

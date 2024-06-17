@@ -45,11 +45,18 @@ public class P1Stats : MonoBehaviour
 
     public float StaminaAdded;
 
+    public AudioSource StatAudio;
+
+    public AudioClip BoostSound, HurtSound, EAttackSound, GAttackSound, KillSound, EatSound, RestartSound;
+
     public void OnHealthClick()
     {       
         Health += 2;
 
         H1.value = Health;
+
+        StatAudio.clip = BoostSound;
+        StatAudio.Play();
 
         CardPanel1.SetActive(false);
         CardPanel2.SetActive(false);
@@ -76,6 +83,9 @@ public class P1Stats : MonoBehaviour
 
         S1.value = Stamina;
 
+        StatAudio.clip = BoostSound;
+        StatAudio.Play();
+
         CardPanel1.SetActive(false);
         CardPanel2.SetActive(false);
         CardPanel3.SetActive(false);
@@ -89,6 +99,9 @@ public class P1Stats : MonoBehaviour
         Health2 += 2;
 
         H2.value = Health2;
+
+        StatAudio.clip = BoostSound;
+        StatAudio.Play();
 
         CardPanel1.SetActive(false);
         CardPanel2.SetActive(false);
@@ -117,6 +130,9 @@ public class P1Stats : MonoBehaviour
 
         Debug.Log(Stamina2);
 
+        StatAudio.clip = BoostSound;
+        StatAudio.Play();
+
         CardPanel1.SetActive(false);
         CardPanel2.SetActive(false);
         CardPanel3.SetActive(false);        
@@ -131,6 +147,9 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
+        StatAudio.clip = GAttackSound;
+        StatAudio.Play();
+
         //HealthTxt.text = "Health: " + Health;
     }
     public void GnomeAttack2()
@@ -138,6 +157,9 @@ public class P1Stats : MonoBehaviour
         Health2 -= 1;
 
         H2.value = Health2;
+
+        StatAudio.clip = GAttackSound;
+        StatAudio.Play();
 
         //HealthTxt2.text = "Health: " + Health2;
     }
@@ -149,6 +171,9 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
+        StatAudio.clip = HurtSound;
+        StatAudio.Play();
+
         //HealthTxt.text = "Health: " + Health;
     }
     public void Blackjack2()
@@ -156,6 +181,9 @@ public class P1Stats : MonoBehaviour
         Health2 -= 0.5f;
 
         H2.value = Health2;
+
+        StatAudio.clip = HurtSound;
+        StatAudio.Play();
 
         //HealthTxt2.text = "Health: " + Health2;
     }
@@ -167,6 +195,9 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
+        StatAudio.clip = EAttackSound;
+        StatAudio.Play();
+
         //HealthTxt.text = "Health: " + Health;
     }
     public void EagleAttack2()
@@ -174,6 +205,9 @@ public class P1Stats : MonoBehaviour
         Health2 -= 1;
 
         H2.value = Health2;
+
+        StatAudio.clip = EAttackSound;
+        StatAudio.Play();
 
         //HealthTxt2.text = "Health: " + Health2;
     }
@@ -191,6 +225,9 @@ public class P1Stats : MonoBehaviour
 
         M2.value = Mental2;
 
+        StatAudio.clip = KillSound;
+        StatAudio.Play();
+
         //MentalTxt2.text = "Mental: " + Mental2;
     }
     public void EnemyKill2()
@@ -205,6 +242,9 @@ public class P1Stats : MonoBehaviour
 
         M1.value = Mental;
 
+        StatAudio.clip = KillSound;
+        StatAudio.Play();
+
         //MentalTxt.text = "Mental: " + Mental;
     }
 
@@ -215,6 +255,9 @@ public class P1Stats : MonoBehaviour
 
         S1.value = Stamina;
 
+        StatAudio.clip = EatSound;
+        StatAudio.Play();
+
         //StaminaTxt.text = "Stamina: " + Stamina;
     }
     public void Tomato2()
@@ -222,6 +265,9 @@ public class P1Stats : MonoBehaviour
         Stamina2 += 1;
 
         S2.value = Stamina2;
+
+        StatAudio.clip = EatSound;
+        StatAudio.Play();
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
@@ -232,6 +278,9 @@ public class P1Stats : MonoBehaviour
 
         H1.value = Health;
 
+        StatAudio.clip = EatSound;
+        StatAudio.Play();
+
         //StaminaTxt.text = "Stamina: " + Stamina;
     }
     public void PoisonM2()
@@ -239,6 +288,9 @@ public class P1Stats : MonoBehaviour
         Health2 -= 2;
 
         H2.value = Health2;
+
+        StatAudio.clip = EatSound;
+        StatAudio.Play();
 
         //StaminaTxt2.text = "Stamina: " + Stamina2;
     }
@@ -279,6 +331,9 @@ public class P1Stats : MonoBehaviour
 
             H1.value = Health;
 
+            StatAudio.clip = RestartSound;
+            StatAudio.Play();
+
             //HealthTxt.text = "Health: " + Health;
 
             Player1.transform.position = P1Spawn.transform.position;
@@ -291,6 +346,9 @@ public class P1Stats : MonoBehaviour
             Health2 = 5;
 
             H2.value = Health2;
+
+            StatAudio.clip = RestartSound;
+            StatAudio.Play();
 
             //HealthTxt2.text = "Health: " + Health2;
 

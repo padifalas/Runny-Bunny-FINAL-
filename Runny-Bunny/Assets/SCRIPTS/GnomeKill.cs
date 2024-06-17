@@ -35,7 +35,5 @@ public class GnomeKill : MonoBehaviour
 
             stats.EnemyKill2();
         }
-    }
-
-   
+    }   
 }

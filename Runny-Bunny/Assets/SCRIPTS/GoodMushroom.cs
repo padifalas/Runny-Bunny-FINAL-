@@ -55,7 +55,7 @@ public class GoodMushroom : MonoBehaviour
     {
         if (StatChange2 == true)
         {
-            if (Input.GetKeyDown(KeyCode.Keypad0))
+            if (Input.GetKeyDown(KeyCode.RightControl))
             {
                 Debug.Log("CRUNCH");
 
@@ -67,7 +67,7 @@ public class GoodMushroom : MonoBehaviour
 
         if (StatChange1 == true)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
                 Debug.Log("CRUNCH");
 
