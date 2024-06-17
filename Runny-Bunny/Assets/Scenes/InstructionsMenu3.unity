@@ -575,8 +575,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Next2, Assembly-CSharp
+      - m_Target: {fileID: 1037363614}
+        m_TargetAssemblyTypeName: Next3, Assembly-CSharp
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -679,9 +679,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1037363609}
   - {fileID: 628350155}
   - {fileID: 325544194}
+  - {fileID: 1037363609}
   m_Father: {fileID: 1735397223}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
